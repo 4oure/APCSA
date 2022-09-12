@@ -7,7 +7,7 @@ public class Strings {
         // [ ) first is inclusive, second isnt
         System.out.println(name.indexOf("av"));
 
-        // use the substring method of any string and then write the substirng that returns the last charcater of the string
+        // use the substring method of any string and then write the substirng that returns the last character of the string
         System.out.println(name.charAt(name.length()-1));
     }
 }
