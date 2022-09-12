@@ -5,6 +5,6 @@ public class Strings {
         System.out.println(name.substring(0,3));
         // prints Gav
         // [ ) first is inclusive, second isnt
-
+        System.out.println(name.indexOf("av"));
     }
 }
