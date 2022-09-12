@@ -3,7 +3,8 @@ public class Strings {
         System.out.println("Hello");
         String name = "Gavin";
         System.out.println(name.substring(0,3));
-        // [ )
+        // prints Gav
+        // [ ) first is inclusive, second isnt
 
     }
 }
