@@ -1,3 +1,7 @@
+// link to repl.it: https://replit.com/@DavidFleniken/APCSA#Main.java
+
+
+
 class Main {
     public static void main(String[] args) {
         double money = 100000;
