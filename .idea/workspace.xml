@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="wedsep14">
-      <change afterPath="$PROJECT_DIR$/src/Toilet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="monsep19">
+      <change beforePath="$PROJECT_DIR$/src/Toilet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Toilet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +42,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "14",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
@@ -179,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663180994823</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="monsep19">
+      <created>1663594884417</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663594884417</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,6 +216,7 @@
     <MESSAGE value="monsep12" />
     <MESSAGE value="tuessep13" />
     <MESSAGE value="wedsep14" />
-    <option name="LAST_COMMIT_MESSAGE" value="wedsep14" />
+    <MESSAGE value="monsep19" />
+    <option name="LAST_COMMIT_MESSAGE" value="monsep19" />
   </component>
 </project>

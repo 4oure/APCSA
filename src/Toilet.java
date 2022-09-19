@@ -1,7 +1,8 @@
-class Main{
-    public static void main(String[] args){
+class Main {
+    public static void main(String[] args) {
         double money = 100000;
-        Toilet dyson = new Toilet();
+        Toilet dyson = new Toilet(5, 5, "white");
+        System.out.println(dyson.getColor());
 
     }
 }
@@ -14,41 +15,42 @@ class Toilet {
     private boolean isClean;
     private String color;
 
+
     //waterCap must be greater than 0
-    public void Toilet(double waterCap, double fillAmount){
+    public Toilet(double waterCap, double fillAmount, String whatColor) {
         waterCapacity = waterCap;
         filledAmount = fillAmount;
-        if (waterCap < 0){
+        color = whatColor;
+        if (waterCap < 0) {
             System.out.println("How is there a negative amount of water in your toilet? Ew!");
         }
-        if(waterCap == fillAmount){
+        if (waterCap == fillAmount) {
             isFull = true;
             isEmpty = false;
-        }else{
+        } else {
             isFull = false;
-            if(fillAmount == 0){
+            if (fillAmount == 0) {
                 isEmpty = true;
             }
 
         }
-
-
-
     }
-    public void flushToilet(){
+
+    public void flushToilet() {
         isFull = false;
         isEmpty = true;
         filledAmount = 0;
     }
 
-    public void setColor(String toiletColor){
+    public void setColor(String toiletColor) {
         color = toiletColor;
     }
 
-    public String getColor(){
+    public String getColor() {
         return color;
     }
-    public void setCleanliness(Boolean isItClean){
+
+    public void setCleanliness(Boolean isItClean) {
         isClean = isItClean;
     }
 
