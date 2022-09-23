@@ -90,5 +90,7 @@ public class City {
     public static void main (String[] args){
         City jonesville = new City("jonesville", 40000, 41092, 202, 10, "John Idiot", 2828);
         System.out.println(jonesville.toString());
+
+
     }
 }
