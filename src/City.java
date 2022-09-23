@@ -21,7 +21,63 @@ public class City {
         this.numberOfNeighborhoods = numberOfNeighborhoods;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public int getPopulation() {
+        return population;
+    }
 
+    public double getArea() {
+        return area;
+    }
 
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public String getMayor() {
+        return mayor;
+    }
+
+    public int getNumberOfNeighborhoods() {
+        return numberOfNeighborhoods;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPopulation(int population) {
+        this.population = population;
+    }
+
+    public void setArea(double area) {
+        this.area = area;
+    }
+
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
+
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
+    }
+
+    public void setMayor(String mayor) {
+        this.mayor = mayor;
+    }
+
+    public void setNumberOfNeighborhoods(int numberOfNeighborhoods) {
+        this.numberOfNeighborhoods = numberOfNeighborhoods;
+    }
+
+    public String toString(){
+        return this.name + " is a town located at latitude "+ this.latitude + " and at longitude " +this.longitude+". " + this.population+ " people live there, all living within the luxurious " +this.numberOfNeighborhoods+ " neighborhoods. This beautiful community sits on " + this.area + "square miles of land, all governed by " +this.mayor;
+    }
 }

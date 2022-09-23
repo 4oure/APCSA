@@ -12,7 +12,7 @@ class Main {
 }
 
 class Toilet {
-    private double waterCapacity;
+    private final double waterCapacity;
     private double filledAmount;
     private boolean isFull;
     private boolean isEmpty;
