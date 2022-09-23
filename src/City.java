@@ -1,3 +1,4 @@
+
 public class City {
     private String name;
     private int population;
@@ -78,6 +79,16 @@ public class City {
     }
 
     public String toString(){
-        return this.name + " is a town located at latitude "+ this.latitude + " and at longitude " +this.longitude+". " + this.population+ " people live there, all living within the luxurious " +this.numberOfNeighborhoods+ " neighborhoods. This beautiful community sits on " + this.area + "square miles of land, all governed by " +this.mayor;
+        return this.name + " is a town located at latitude "+ this.latitude + " and at longitude " +this.longitude+". " + this.population+ " people live there, all living within the luxurious " +this.numberOfNeighborhoods+ " neighborhoods. This beautiful community sits on " + this.area + " square miles of land, all governed by " +this.mayor + ".";
+    }
+
+    public double residentsPerSquareMile(){
+        return this.population / this.area;
+
+    }
+
+    public static void main (String[] args){
+        City jonesville = new City("jonesville", 40000, 41092, 202, 10, "John Idiot", 2828);
+        System.out.println(jonesville.toString());
     }
 }
