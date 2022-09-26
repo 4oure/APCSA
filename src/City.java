@@ -75,19 +75,27 @@ public class City {
     }
 
     public void setNumberOfNeighborhoods(int numberOfNeighborhoods) { this.numberOfNeighborhoods = numberOfNeighborhoods; }
-
+    @Override
     public String toString(){
         return this.name + " is a town located at latitude "+ this.latitude + " and at longitude " +this.longitude+". " + this.population+ " people live there, all housed within the luxurious " +this.numberOfNeighborhoods+ " neighborhoods. This beautiful community sits on " + this.area + " square miles of land, all governed by " +this.mayor + ", the mayor of our fine town!";
     }
 
     public double residentsPerSquareMile(){
-        return this.population / this.area;
+        double retVal = 0.0;
+        // checking for divide by 0
+        if (area > 0) {
+            return this.population / this.area;
+        }
+        return retVal;
 
     }
 
     public static void main (String[] args){
         City jonesville = new City("jonesville", 40000, 41092, 202, 10, "John Idiot", 2828);
-        System.out.println(jonesville.toString());
+        System.out.println(jonesville);
+
+        City idk = new City();
+
 
 
     }
