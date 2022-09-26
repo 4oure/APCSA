@@ -74,12 +74,10 @@ public class City {
         this.mayor = mayor;
     }
 
-    public void setNumberOfNeighborhoods(int numberOfNeighborhoods) {
-        this.numberOfNeighborhoods = numberOfNeighborhoods;
-    }
+    public void setNumberOfNeighborhoods(int numberOfNeighborhoods) { this.numberOfNeighborhoods = numberOfNeighborhoods; }
 
     public String toString(){
-        return this.name + " is a town located at latitude "+ this.latitude + " and at longitude " +this.longitude+". " + this.population+ " people live there, all living within the luxurious " +this.numberOfNeighborhoods+ " neighborhoods. This beautiful community sits on " + this.area + " square miles of land, all governed by " +this.mayor + ".";
+        return this.name + " is a town located at latitude "+ this.latitude + " and at longitude " +this.longitude+". " + this.population+ " people live there, all housed within the luxurious " +this.numberOfNeighborhoods+ " neighborhoods. This beautiful community sits on " + this.area + " square miles of land, all governed by " +this.mayor + ", the mayor of our fine town!";
     }
 
     public double residentsPerSquareMile(){
