@@ -102,8 +102,8 @@ public class City {
 
     public double estIndTaxRevenue(double percentOfPeopleWhoGenerateTaxableIncome){ // returns the amount of tax revenue gen per person per month 58.4 % of people generate taxable income (put in as argument)
         double realPercent = percentOfPeopleWhoGenerateTaxableIncome * .001;
-        double amtOfMoney =  population * realPercent * 1000;
-        return amtOfMoney;
+        return  population * realPercent * 1000;
+
     }
 
     public void printCityRevenue(){
