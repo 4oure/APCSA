@@ -8,6 +8,9 @@ public class City {
     private String mayor;
     private int numberOfNeighborhoods;
 
+    static int cityCount;
+    final double taxConstant = 4;
+
     public City(){
 
     }
@@ -20,6 +23,7 @@ public class City {
         this.longitude = longitude;
         this.mayor = mayor;
         this.numberOfNeighborhoods = numberOfNeighborhoods;
+        cityCount++;
     }
 
     public String getName() {
@@ -77,7 +81,7 @@ public class City {
     public void setNumberOfNeighborhoods(int numberOfNeighborhoods) { this.numberOfNeighborhoods = numberOfNeighborhoods; }
     @Override
     public String toString(){
-        return this.name + " is a town located at latitude "+ this.latitude + " and at longitude " +this.longitude+". " + this.population+ " people live there, all housed within the luxurious " +this.numberOfNeighborhoods+ " neighborhoods. This beautiful community sits on " + this.area + " square miles of land, all governed by " +this.mayor + ", the mayor of our fine town!";
+        return this.name + " is a town located at latitude "+ this.latitude + " and at longitude " +this.longitude+". " + this.population+ " people live there, all housed within the luxurious " +this.numberOfNeighborhoods+ " neighborhoods. This beautiful community sits on " + this.area + " square miles of land, all governed by " +this.mayor + ", the mayor of our fine town! There are " +cityCount+ " subcities in our area.";
     }
 
     public double residentsPerSquareMile(){
@@ -90,10 +94,27 @@ public class City {
 
     }
 
+
+    public double monthlyRevenue(){
+
+        return population * taxConstant;
+    }
+
+    public double estIndTaxRevenue(double percentOfPeopleWhoGenerateTaxableIncome){ // returns the amount of tax revenue gen per person per month 58.4 % of people generate taxable income (put in as argument)
+        double realPercent = percentOfPeopleWhoGenerateTaxableIncome * .001;
+        double amtOfMoney =  population * realPercent * 1000;
+        return amtOfMoney;
+    }
+
+    public void printCityRevenue(){
+        System.out.println("The city of " +name+ " generates $" +estIndTaxRevenue(58.4)+ " dollars per month per walking adult." );
+    }
+
     public static void main (String[] args){
         City Jonesville = new City("Jonesville", 40000, 41092, 202, 10, "John Idiot", 2828);
         System.out.println(Jonesville.toString());
 
         City idk = new City();
+        Jonesville.printCityRevenue();
     }
 }
