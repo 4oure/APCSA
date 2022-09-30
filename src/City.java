@@ -9,7 +9,7 @@ public class City {
     private int numberOfNeighborhoods;
 
     static int cityCount;
-    final double taxConstant = 4;
+    final double taxConstant = 4; // monthly per person
 
     public City(){
 
@@ -102,7 +102,7 @@ public class City {
 
     public double estIndTaxRevenue(double percentOfPeopleWhoGenerateTaxableIncome){ // returns the amount of tax revenue gen per person per month 58.4 % of people generate taxable income (put in as argument)
         double realPercent = percentOfPeopleWhoGenerateTaxableIncome * .001;
-        return  population * realPercent * 1000;
+        return  population * realPercent * taxConstant;
 
     }
 
