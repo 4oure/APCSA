@@ -8,8 +8,6 @@ public class workingWithArrays {
                 biggest  = arr[x];
             }
         }
-
-
         for (int x = arr.length - 1; x >= 0; x--){
             System.out.println(arr[x]);
         }

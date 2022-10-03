@@ -112,7 +112,7 @@ public class City {
 
     public static void main (String[] args){
         City Jonesville = new City("Jonesville", 40000, 41092, 202, 10, "John Idiot", 2828);
-        System.out.println(Jonesville.toString());
+        System.out.println(Jonesville);
 
         City idk = new City();
         Jonesville.printCityRevenue();

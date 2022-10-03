@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="frisep30">
+      <change afterPath="$PROJECT_DIR$/src/homeworkWhileSIck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/waitAMinute.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/City.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/workingWithArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/workingWithArrays.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +65,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.workingWithArrays">
+  <component name="RunManager" selected="Application.homeworkWhileSIck">
     <configuration name="City" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="City" />
       <module name="APCSA" />
@@ -67,15 +73,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="APCSA" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="firstForLoops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="firstForLoops" />
+    <configuration name="homeworkWhileSIck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeworkWhileSIck" />
       <module name="APCSA" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -83,6 +82,13 @@
     </configuration>
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="APCSA" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="waitAMinute" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="waitAMinute" />
       <module name="APCSA" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.homeworkWhileSIck" />
+        <item itemvalue="Application.waitAMinute" />
         <item itemvalue="Application.workingWithArrays" />
         <item itemvalue="Application.City" />
         <item itemvalue="Application.main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.firstForLoops" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664544788248</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="frisep30">
+      <created>1664545601910</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1664545601910</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
