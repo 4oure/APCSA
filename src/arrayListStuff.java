@@ -10,10 +10,12 @@ public class arrayListStuff {
         monkee.add(103);
         monkee.add(20);
         monkee.add(76);
+        monkee.set(2, 39);
+        monkee.add(monkee.size()-1, 49);
 
         System.out.println(monkee);
 
-        for(int animal:monkee){
+        for(Integer animal:monkee){
             System.out.println(animal);
 
         }
