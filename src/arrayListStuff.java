@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 
-import java.util.ArrayList;
-
 public class arrayListStuff {
     public static void main(String[] args) {
         ArrayList<Integer> monkee = new ArrayList<Integer>();
@@ -14,5 +12,11 @@ public class arrayListStuff {
         monkee.add(76);
 
         System.out.println(monkee);
+
+        for(int animal:monkee){
+            System.out.println(animal);
+
+        }
+
     }
 }

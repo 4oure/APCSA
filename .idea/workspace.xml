@@ -4,9 +4,9 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="monoct3">
-      <change afterPath="$PROJECT_DIR$/src/arrayListStuff.java" afterDir="false" />
+    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="wedoct5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arrayListStuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arrayListStuff.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664825772039</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="wedoct5">
+      <created>1664984373184</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1664984373184</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -347,7 +354,8 @@
     <MESSAGE value="thurssep29" />
     <MESSAGE value="frisep30" />
     <MESSAGE value="monoct3" />
-    <option name="LAST_COMMIT_MESSAGE" value="monoct3" />
+    <MESSAGE value="wedoct5" />
+    <option name="LAST_COMMIT_MESSAGE" value="wedoct5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
