@@ -21,13 +21,12 @@ public class createArrayListssssss {
     }
 
     public static void swapOddToEven(ArrayList<Integer> numbers) {
-        for(int x = 0; x < numbers.size(); x++){
-            if(x % 2 != 0){
-                int temp = numbers.get(x-1);
-                numbers.set(x-1, numbers.get(x));
+        for (int x = 0; x < numbers.size(); x++) {
+            if (x % 2 != 0) {
+                int temp = numbers.get(x - 1);
+                numbers.set(x - 1, numbers.get(x));
                 numbers.set(x, temp);
             }
-
 
 
         }
