@@ -1,3 +1,4 @@
+
 class letsDoItWith2DArrays{
     public static void main(String[] args) {
         /*
@@ -12,12 +13,22 @@ Kennedy	89	70	91
 Madelyn	99	82	94
 Josephine	98	96	99 */
 
-        Object[][] o = new Object[10][10];
+        String[] names = {"Nathan", "Nolan", "Adrian", "Cameron", "Santaigo", "Savannah", "Valentina", "Kennedy", "Madelyn", "Josephine" };
+        int[][] scores = {
+                {88, 98, 89}, {70,76,74}, {81,74,81}, {84, 80, 93}, {96, 100, 98}, {96,100,98}, {78, 75, 72}, {94, 73, 80}, {89, 70, 91}, {99, 82, 94}, {98,96,99}
+        };
 
-        o[0][0] = 1;
-        o[0][1] ="hello";
+        for (int[] score : scores) {
+            for (int i : score) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
 
-        System.out.println(o[0][0]);
-        System.out.println(o[0][1]);
+
+
+
+
+
     }
 }
