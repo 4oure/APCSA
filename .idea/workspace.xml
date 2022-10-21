@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="monoct17">
-      <change afterPath="$PROJECT_DIR$/src/intDataClassworkAssignment.java" afterDir="false" />
+    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="thursoct20">
+      <change afterPath="$PROJECT_DIR$/src/twodeearraylist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/letsDoItWith2DArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/letsDoItWith2DArrays.java" afterDir="false" />
     </list>
@@ -60,14 +60,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.intDataClassworkAssignment">
-    <configuration name="arrayListStuff" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="arrayListStuff" />
-      <module name="APCSA" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.twodeearraylist">
     <configuration name="createArrayListssssss" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="createArrayListssssss" />
       <module name="APCSA" />
@@ -96,6 +89,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="twodeearraylist" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="twodeearraylist" />
+      <module name="APCSA" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="JarApplication" nameIsGenerated="true">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -103,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.twodeearraylist" />
         <item itemvalue="Application.intDataClassworkAssignment" />
         <item itemvalue="Application.letsDoItWith2DArrays" />
         <item itemvalue="Application.help" />
         <item itemvalue="Application.createArrayListssssss" />
-        <item itemvalue="Application.arrayListStuff" />
       </list>
     </recent_temporary>
   </component>
@@ -351,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666019433403</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="thursoct20">
+      <created>1666297033786</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1666297033786</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -390,7 +397,8 @@
     <MESSAGE value="wedoct5" />
     <MESSAGE value="thursoct6" />
     <MESSAGE value="monoct17" />
-    <option name="LAST_COMMIT_MESSAGE" value="monoct17" />
+    <MESSAGE value="thursoct20" />
+    <option name="LAST_COMMIT_MESSAGE" value="thursoct20" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
