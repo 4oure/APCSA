@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="tueoct25">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inheritence/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritence/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inheritence/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritence/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inheritence/Mammal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritence/Mammal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/letsDoItWith2DArrays.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -397,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666700285853</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="tueoct25">
+      <created>1666701484351</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1666701484351</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
