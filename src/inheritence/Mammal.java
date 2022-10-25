@@ -1,3 +1,5 @@
+package inheritence;
+
 public class Mammal{
 
     private boolean vertebrate;
