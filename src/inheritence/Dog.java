@@ -20,6 +20,10 @@ public class Dog extends Mammal {
             super(hairColor);
             name = nameOfDog;
         }
+        @Override
+        public String talk(){
+            return "Hi, my name is " + name;
+        }
 
 
     }

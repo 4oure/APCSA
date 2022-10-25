@@ -31,4 +31,8 @@ public class Mammal{
         hairColor = color;
     }
 
+    public String talk(){
+        return "Hello, my hair color is "+ hairColor;
+    }
+
 }
