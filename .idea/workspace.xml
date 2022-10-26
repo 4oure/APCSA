@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="wedoct26">
-      <change beforePath="$PROJECT_DIR$/src/inheritence/Baby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritence/Baby.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inheritence/Embryo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritence/Embryo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inheritence/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritence/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -422,7 +421,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666790496688</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="wedoct26">
+      <created>1666790957449</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1666790957449</updated>
+    </task>
+    <task id="LOCAL-00044" summary="wedoct26">
+      <created>1666791036083</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1666791036083</updated>
+    </task>
+    <task id="LOCAL-00045" summary="wedoct26">
+      <created>1666791138610</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1666791138610</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

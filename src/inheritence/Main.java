@@ -8,8 +8,9 @@ public class Main {
 
         // break
         FamilyMember mom = new FamilyMember();
-        Baby junior = new Baby(4);
+        Baby junior = new Baby(1);
         SporkUser auntSue = new SporkUser();
+        System.out.println(junior.eat());
 
         System.out.println(mom.drink());
         System.out.println(junior.drink());

@@ -1,7 +1,7 @@
 package inheritence;
 
 public class Baby extends FamilyMember {
-    private int age = 0;
+    private int age;
 
     public String eat(){
         if(age > 3){
@@ -11,7 +11,16 @@ public class Baby extends FamilyMember {
         return "hands";
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     public Baby(int age) {
+        setAge(age);
 
     }
     public Baby(){
