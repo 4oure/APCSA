@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="wedoct26">
-      <change beforePath="$PROJECT_DIR$/src/inheritence/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritence/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Artifact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Artwork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Backyard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Bird.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Document.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Hawk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Pet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/TextBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +64,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "14",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
@@ -61,7 +76,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="inheritence.Main" />
       <module name="APCSA" />
@@ -71,13 +86,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="help" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="help" />
-      <module name="APCSA" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,6 +104,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="octtwosixhw.main" />
+      <module name="APCSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="octtwosixhw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="twodeearraylist" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="twodeearraylist" />
       <module name="APCSA" />
@@ -110,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.twodeearraylist" />
         <item itemvalue="Application.intDataClassworkAssignment" />
         <item itemvalue="Application.letsDoItWith2DArrays" />
-        <item itemvalue="Application.help" />
       </list>
     </recent_temporary>
   </component>
@@ -442,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666791138610</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="wedoct26">
+      <created>1666791505972</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1666791505972</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
