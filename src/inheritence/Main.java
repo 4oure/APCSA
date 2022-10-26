@@ -8,7 +8,7 @@ public class Main {
 
         // break
         FamilyMember mom = new FamilyMember();
-        Baby junior = new Baby();
+        Baby junior = new Baby(4);
         SporkUser auntSue = new SporkUser();
 
         System.out.println(mom.drink());

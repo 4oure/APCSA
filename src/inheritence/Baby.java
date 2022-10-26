@@ -1,7 +1,7 @@
 package inheritence;
 
 public class Baby extends FamilyMember {
-    private int age;
+    private int age = 0;
 
     public String eat(){
         if(age > 3){
