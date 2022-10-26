@@ -11,7 +11,10 @@ public class Baby extends FamilyMember {
         return "hands";
     }
 
-    public Baby() {
+    public Baby(int age) {
+
+    }
+    public Baby(){
 
     }
 
