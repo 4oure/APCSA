@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="wedoct26">
-      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Artifact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Artwork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Backyard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Bird.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Document.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Hawk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/Pet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/TextBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/octtwosixhw/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/Administrator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/Faculty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/Staff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +61,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -470,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666791505972</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="wedoct26">
+      <created>1666825210963</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1666825210963</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
