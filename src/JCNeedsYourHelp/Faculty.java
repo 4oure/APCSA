@@ -41,6 +41,7 @@ public class Faculty extends Employee {
 	}
 	@Override
 	public String toString(){
+		return "Hey! My name is " + name+ " and I am a teacher at The John Carroll School. I teach " +subject+ " to " +studentsPerSemester+ " students per semester in room " +roomNumber+ ". I earn " + salary+ " and it is " +mastersDegree+ " that I have a masters degree. I am " +age+ " years old with " +yearsOfExperience+ " years of experience.";
 
 	}
 }
