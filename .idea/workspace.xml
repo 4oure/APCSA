@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="wedoct26">
-      <change afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/Administrator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/Faculty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/Staff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/main.java" afterDir="false" />
+    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="thursoct27">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JCNeedsYourHelp/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JCNeedsYourHelp/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +66,20 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.main">
+  <component name="RunManager" selected="Application.JCNeedsYourHelp.main">
+    <configuration name="JCNeedsYourHelp.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JCNeedsYourHelp.main" />
+      <module name="APCSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JCNeedsYourHelp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="inheritence.Main" />
       <module name="APCSA" />
@@ -85,13 +95,6 @@
     </configuration>
     <configuration name="intDataClassworkAssignment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="intDataClassworkAssignment" />
-      <module name="APCSA" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="letsDoItWith2DArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="letsDoItWith2DArrays" />
       <module name="APCSA" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JCNeedsYourHelp.main" />
         <item itemvalue="Application.main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.twodeearraylist" />
         <item itemvalue="Application.intDataClassworkAssignment" />
-        <item itemvalue="Application.letsDoItWith2DArrays" />
       </list>
     </recent_temporary>
   </component>
@@ -470,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666825210963</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="thursoct27">
+      <created>1666881636088</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1666881636088</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -528,7 +538,8 @@
     <MESSAGE value="frioct21" />
     <MESSAGE value="tueoct25" />
     <MESSAGE value="wedoct26" />
-    <option name="LAST_COMMIT_MESSAGE" value="wedoct26" />
+    <MESSAGE value="thursoct27" />
+    <option name="LAST_COMMIT_MESSAGE" value="thursoct27" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

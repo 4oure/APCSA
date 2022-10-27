@@ -8,7 +8,7 @@ public class Administrator extends Employee {
 
 	}
 	public Administrator(String howMuchPower, String title,String theirName, int theirSalary, boolean doTheyHaveAMasters, int theirAge, int howManyYearsOfExperience){
-		super();
+		super(theirName, theirSalary, doTheyHaveAMasters, theirAge, howManyYearsOfExperience);
 		this.howMuchPower=howMuchPower;
 		this.title = title;
 	}

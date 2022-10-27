@@ -34,9 +34,13 @@ public class Faculty extends Employee {
 	}
 
 	public Faculty(String subjectTeach, int roomNo, int howManyStudentsPerSemester, String theirName, int theirSalary, boolean doTheyHaveAMasters, int theirAge, int howManyYearsOfExperience){
-		super();
+		super(theirName, theirSalary, doTheyHaveAMasters, theirAge, howManyYearsOfExperience);
 		subject = subjectTeach;
 		roomNumber = roomNo;
 		studentsPerSemester = howManyStudentsPerSemester;
+	}
+	@Override
+	public String toString(){
+
 	}
 }
