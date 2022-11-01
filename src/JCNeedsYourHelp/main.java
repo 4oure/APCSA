@@ -9,6 +9,8 @@ public class main extends Employee{
 		Faculty James = new Faculty("Math", 244, 128, "James Wilkonson", 38000, true, 49, 25, true, false, true, true);
 		System.out.println(James.toString());
 
+		Administrator person = new Administrator();
+
 		ArrayList<Employee> gentlemen = new ArrayList<>();
 		gentlemen.add(peter);
 		gentlemen.add(James);
