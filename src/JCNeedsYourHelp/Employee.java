@@ -1,5 +1,7 @@
 package JCNeedsYourHelp;
 
+import java.util.ArrayList;
+
 public class Employee {
 	String name;
 	int salary;
@@ -47,16 +49,26 @@ public class Employee {
 		this.yearsOfExperience = yearsOfExperience;
 	}
 
+
+	public static double payrollTotal(ArrayList<Employee> friends){
+		double total = 0;
+		for(Employee person : friends){
+			total += person.getSalary();
+		}
+		return total;
+	}
+
+
 	public Employee(){
 
 	}
-
 	public Employee(String theirName, int theirSalary, boolean doTheyHaveAMasters, int theirAge, int howManyYearsOfExperience){
 		name = theirName;
 		salary = theirSalary;
 		mastersDegree = doTheyHaveAMasters;
 		age = theirAge;
 		yearsOfExperience = howManyYearsOfExperience;
+
 
 	}
 }

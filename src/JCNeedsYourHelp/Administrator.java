@@ -29,7 +29,7 @@ public class Administrator extends Employee {
 		this.title = title;
 	}
 	@Override
-	public String toString(){
-		return "Good day to you, my name is " +name+". I work for John Carroll, holding the position of " +title+ ". I have "+howMuchPower+ " authority. I am " +age+ " years old and have " +yearsOfExperience+ " years of experience working in an occupation like this. I earn " +salary+ " dollars per year.";
+	public String toString() {
+		return "Good day to you, my name is " + name + ". I work for John Carroll, holding the position of " + title + ". I have " + howMuchPower + " authority. I am " + age + " years old and have " + yearsOfExperience + " years of experience working in an occupation like this. I earn " + salary + " dollars per year.";
 	}
 }
