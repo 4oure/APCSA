@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="thursoct27">
+    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="afterIAddedPayroll">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JCNeedsYourHelp/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/Administrator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JCNeedsYourHelp/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JCNeedsYourHelp/Faculty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/Faculty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JCNeedsYourHelp/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/Staff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JCNeedsYourHelp/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,13 +151,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662996494777</updated>
-    </task>
-    <task id="LOCAL-00002" summary="monsep12">
-      <created>1662997014555</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1662997014555</updated>
     </task>
     <task id="LOCAL-00003" summary="monsep12">
       <created>1662997075791</created>
@@ -494,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666883187479</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="afterIAddedPayroll">
+      <created>1667323788044</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1667323788044</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -553,7 +554,8 @@
     <MESSAGE value="tueoct25" />
     <MESSAGE value="wedoct26" />
     <MESSAGE value="thursoct27" />
-    <option name="LAST_COMMIT_MESSAGE" value="thursoct27" />
+    <MESSAGE value="afterIAddedPayroll" />
+    <option name="LAST_COMMIT_MESSAGE" value="afterIAddedPayroll" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

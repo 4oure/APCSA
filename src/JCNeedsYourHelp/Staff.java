@@ -33,8 +33,8 @@ public class Staff extends Employee {
 
 	}
 
-	public Staff(boolean doTheyHaveABachelors, boolean doesTheirJobInvolveManualLabor, boolean isItADeskJob, String theirName, int theirSalary, boolean doTheyHaveAMasters, int theirAge, int howManyYearsOfExperience){
-		super(theirName, theirSalary, doTheyHaveAMasters, theirAge, howManyYearsOfExperience);
+	public Staff(boolean doTheyHaveABachelors, boolean doesTheirJobInvolveManualLabor, boolean isItADeskJob, String theirName, int theirSalary, boolean doTheyHaveAMasters, int theirAge, int howManyYearsOfExperience, boolean doTheyGotHealth, boolean doTheyGotDental, boolean doTheyGotVision, boolean doTheyGotRetirement){
+		super(theirName, theirSalary, doTheyHaveAMasters, theirAge, howManyYearsOfExperience,doTheyGotHealth,doTheyGotDental,doTheyGotVision,doTheyGotRetirement);
 		bachelorsDegree = doTheyHaveABachelors;
 		manualLabor = doesTheirJobInvolveManualLabor;
 		deskJob = isItADeskJob;

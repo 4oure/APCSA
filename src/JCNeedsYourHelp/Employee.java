@@ -8,6 +8,43 @@ public class Employee {
 	boolean mastersDegree;
 	int age;
 	int yearsOfExperience;
+	boolean health;
+	boolean dental;
+	boolean vision;
+	boolean retirement;
+
+
+	public boolean isHealth() {
+		return health;
+	}
+
+	public void setHealth(boolean health) {
+		this.health = health;
+	}
+
+	public boolean isDental() {
+		return dental;
+	}
+
+	public void setDental(boolean dental) {
+		this.dental = dental;
+	}
+
+	public boolean isVision() {
+		return vision;
+	}
+
+	public void setVision(boolean vision) {
+		this.vision = vision;
+	}
+
+	public boolean isRetirement() {
+		return retirement;
+	}
+
+	public void setRetirement(boolean retirement) {
+		this.retirement = retirement;
+	}
 
 	public String getName() {
 		return name;
@@ -50,25 +87,30 @@ public class Employee {
 	}
 
 
-	public static double payrollTotal(ArrayList<Employee> friends){
+	public static double payrollTotal(ArrayList<Employee> friends) {
 		double total = 0;
-		for(Employee person : friends){
+		for (Employee person : friends) {
 			total += person.getSalary();
 		}
 		return total;
 	}
 
 
-	public Employee(){
+	public Employee() {
 
 	}
-	public Employee(String theirName, int theirSalary, boolean doTheyHaveAMasters, int theirAge, int howManyYearsOfExperience){
+
+	public Employee(String theirName, int theirSalary, boolean doTheyHaveAMasters, int theirAge, int howManyYearsOfExperience, boolean doTheyGotHealth, boolean doTheyGotDental, boolean doTheyGotVision, boolean doTheyGotRetirement) {
 		name = theirName;
 		salary = theirSalary;
 		mastersDegree = doTheyHaveAMasters;
 		age = theirAge;
 		yearsOfExperience = howManyYearsOfExperience;
-
+		health = doTheyGotHealth;
+		dental = doTheyGotDental;
+		vision = doTheyGotVision;
+		retirement = doTheyGotRetirement;
 
 	}
 }
+

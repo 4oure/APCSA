@@ -33,8 +33,8 @@ public class Faculty extends Employee {
 		this.studentsPerSemester = studentsPerSemester;
 	}
 
-	public Faculty(String subjectTeach, int roomNo, int howManyStudentsPerSemester, String theirName, int theirSalary, boolean doTheyHaveAMasters, int theirAge, int howManyYearsOfExperience){
-		super(theirName, theirSalary, doTheyHaveAMasters, theirAge, howManyYearsOfExperience);
+	public Faculty(String subjectTeach, int roomNo, int howManyStudentsPerSemester, String theirName, int theirSalary, boolean doTheyHaveAMasters, int theirAge, int howManyYearsOfExperience, boolean doTheyGotHealth, boolean doTheyGotDental, boolean doTheyGotVision, boolean doTheyGotRetirement){
+		super(theirName, theirSalary, doTheyHaveAMasters, theirAge, howManyYearsOfExperience, doTheyGotHealth, doTheyGotDental, doTheyGotVision, doTheyGotRetirement);
 		subject = subjectTeach;
 		roomNumber = roomNo;
 		studentsPerSemester = howManyStudentsPerSemester;
