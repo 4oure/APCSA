@@ -1,9 +1,9 @@
 package JCNeedsYourHelp;
 
 public class Staff extends Employee {
-	boolean bachelorsDegree;
-	boolean manualLabor;
-	boolean deskJob;
+	private boolean bachelorsDegree;
+	private boolean manualLabor;
+	private boolean deskJob;
 
 	public boolean isBachelorsDegree() {
 		return bachelorsDegree;
@@ -41,6 +41,7 @@ public class Staff extends Employee {
 	}
 @Override
 	public String toString(){
-		return  "Hi, my name is " + name+ " and I work at John Carroll. I earn " +salary+ " and it is " +bachelorsDegree+ " that I have a bachelors degree. I am " + age + " years old and I have " +yearsOfExperience+ " years of experience. When people ask if I have a desk job, I say " +deskJob+ "!";
+		return  "Hi, my name is " + getName()+ " and I work at John Carroll. I earn " +getSalary()+ " and it is " +bachelorsDegree+ " that I have a bachelors degree. I am " + getAge() + " years old and I have " +getYearsOfExperience()+ " years of experience. When people ask if I have a desk job, I say " +deskJob+ "!";
+		//return String.format("Hi my name is %s ... %s", getName(), getSalary())
 	}
 }

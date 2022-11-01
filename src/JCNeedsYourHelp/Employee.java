@@ -3,15 +3,15 @@ package JCNeedsYourHelp;
 import java.util.ArrayList;
 
 public class Employee {
-	String name;
-	int salary;
-	boolean mastersDegree;
-	int age;
-	int yearsOfExperience;
-	boolean health;
-	boolean dental;
-	boolean vision;
-	boolean retirement;
+	private String name;
+	private int salary;
+	private boolean mastersDegree;
+	private int age;
+	private int yearsOfExperience;
+	private boolean health;
+	private boolean dental;
+	private boolean vision;
+	private boolean retirement;
 
 
 	public boolean isHealth() {

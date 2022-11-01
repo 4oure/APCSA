@@ -30,6 +30,6 @@ public class Administrator extends Employee {
 	}
 	@Override
 	public String toString() {
-		return "Good day to you, my name is " + name + ". I work for John Carroll, holding the position of " + title + ". I have " + howMuchPower + " authority. I am " + age + " years old and have " + yearsOfExperience + " years of experience working in an occupation like this. I earn " + salary + " dollars per year.";
+		return "Good day to you, my name is " + getName() + ". I work for John Carroll, holding the position of " + title + ". I have " + howMuchPower + " authority. I am " + getAge() + " years old and have " + getYearsOfExperience() + " years of experience working in an occupation like this. I earn " + getSalary() + " dollars per year.";
 	}
 }
