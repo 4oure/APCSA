@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="addedListThingForInsurance">
-      <change beforePath="$PROJECT_DIR$/src/JCNeedsYourHelp/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JCNeedsYourHelp/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/Employee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,13 +147,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662996494777</updated>
-    </task>
-    <task id="LOCAL-00007" summary="monsep12">
-      <created>1662998903477</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1662998903477</updated>
     </task>
     <task id="LOCAL-00008" summary="tuessep13">
       <created>1663090511248</created>
@@ -491,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667500158516</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="addedListThingForInsurance">
+      <created>1667500400303</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1667500400303</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
