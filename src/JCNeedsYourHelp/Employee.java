@@ -112,7 +112,7 @@ public class Employee {
 		vision = doTheyGotVision;
 		retirement = doTheyGotRetirement;
 		listThing[0] = health;
-		listThing[1]= dental;
+		listThing[1] = dental;
 		listThing[2] = vision;
 		listThing[3] = retirement;
 
@@ -127,25 +127,25 @@ public class Employee {
 		this.listThing = listThing;
 	}
 
-	public void listBenefits(){
-		if(!listThing[0]){
+	public void listBenefits() {
+		if (!listThing[0]) {
 			System.out.println(getName() + " is not covered for health insurance.");
-		}else{
+		} else {
 			System.out.println(getName() + " is covered for health insurance.");
 		}
-		if(!listThing[1]){
+		if (!listThing[1]) {
 			System.out.println(getName() + " is not covered for dental insurance.");
-		}else{
+		} else {
 			System.out.println(getName() + " is covered for dental insurance.");
 		}
-		if(!listThing[2]){
+		if (!listThing[2]) {
 			System.out.println(getName() + " is not covered for vision insurance.");
-		}else{
+		} else {
 			System.out.println(getName() + " is covered for vision insurance.");
 		}
-		if(!listThing[3]){
+		if (!listThing[3]) {
 			System.out.println(getName() + " is not covered for retirement insurance.");
-		}else{
+		} else {
 			System.out.println(getName() + " is covered for retirement insurance.");
 		}
 
