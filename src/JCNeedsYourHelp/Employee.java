@@ -1,5 +1,6 @@
 package JCNeedsYourHelp;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class Employee {
@@ -13,6 +14,7 @@ public class Employee {
 	private boolean vision;
 	private boolean retirement;
 
+	private boolean[] listThing = {health, dental, vision, retirement};
 
 	public boolean isHealth() {
 		return health;
@@ -110,6 +112,43 @@ public class Employee {
 		dental = doTheyGotDental;
 		vision = doTheyGotVision;
 		retirement = doTheyGotRetirement;
+		listThing[0] = health;
+		listThing[1]= dental;
+		listThing[2] = vision;
+		listThing[3] = retirement;
+
+
+	}
+
+	public boolean[] getListThing() {
+		return listThing;
+	}
+
+	public void setListThing(boolean[] listThing) {
+		this.listThing = listThing;
+	}
+
+	public void listBenefits(){
+		if(!listThing[0]){
+			System.out.println(getName() + " is not covered for health insurance.");
+		}else{
+			System.out.println(getName() + " is covered for health insurance.");
+		}
+		if(!listThing[1]){
+			System.out.println(getName() + " is not covered for dental insurance.");
+		}else{
+			System.out.println(getName() + " is covered for dental insurance.");
+		}
+		if(!listThing[2]){
+			System.out.println(getName() + " is not covered for vision insurance.");
+		}else{
+			System.out.println(getName() + " is covered for vision insurance.");
+		}
+		if(!listThing[3]){
+			System.out.println(getName() + " is not covered for retirement insurance.");
+		}else{
+			System.out.println(getName() + " is covered for retirement insurance.");
+		}
 
 	}
 }

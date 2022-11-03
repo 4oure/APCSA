@@ -6,7 +6,7 @@ public class main extends Employee{
 		Staff peter = new Staff(true, false, false, "Peter", 30000, false, 44, 13, true, false, true, false );
 		System.out.println(peter.toString());
 
-		Faculty James = new Faculty("Math", 244, 128, "James Wilkonson", 38000, true, 49, 25, true, false, true, true);
+		Faculty James = new Faculty("Math", 244, 128, "James Wilkinson", 38000, true, 49, 25, true, false, true, true);
 		System.out.println(James.toString());
 
 		Administrator person = new Administrator();
@@ -14,7 +14,8 @@ public class main extends Employee{
 		ArrayList<Employee> gentlemen = new ArrayList<>();
 		gentlemen.add(peter);
 		gentlemen.add(James);
-		System.out.println(payrollTotal(gentlemen));
+		James.listBenefits();
+
 
 
 
