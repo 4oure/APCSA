@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="fixedPrivate">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JCNeedsYourHelp/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/Employee.java" afterDir="false" />
+    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="addedListThingForInsurance">
       <change beforePath="$PROJECT_DIR$/src/JCNeedsYourHelp/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JCNeedsYourHelp/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,13 +147,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662996494777</updated>
-    </task>
-    <task id="LOCAL-00006" summary="monsep12">
-      <created>1662998002464</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1662998002464</updated>
     </task>
     <task id="LOCAL-00007" summary="monsep12">
       <created>1662998903477</created>
@@ -493,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667346119346</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="addedListThingForInsurance">
+      <created>1667500158516</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1667500158516</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -554,7 +552,8 @@
     <MESSAGE value="thursoct27" />
     <MESSAGE value="afterIAddedPayroll" />
     <MESSAGE value="fixedPrivate" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixedPrivate" />
+    <MESSAGE value="addedListThingForInsurance" />
+    <option name="LAST_COMMIT_MESSAGE" value="addedListThingForInsurance" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

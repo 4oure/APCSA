@@ -15,6 +15,8 @@ public class main extends Employee{
 		gentlemen.add(peter);
 		gentlemen.add(James);
 		James.listBenefits();
+		person.listBenefits();
+		peter.listBenefits();
 
 
 
