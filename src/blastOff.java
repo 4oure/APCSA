@@ -14,7 +14,6 @@ public class blastOff {
 		} else {
 			System.out.println("Blast off!!");
 		}
-		// random return
 		return 1;
 
 	}
