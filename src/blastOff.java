@@ -3,6 +3,7 @@ public class blastOff {
 
 
 		launchSequence(10);
+		System.out.println(factorialFinder(5));
 	}
 
 	public static int launchSequence(int num) {
@@ -17,4 +18,14 @@ public class blastOff {
 		return 1;
 
 	}
+
+	public static int factorialFinder(int num) {
+		if (num <= 1) {
+			return 1;
+		} else {
+			return num * factorialFinder(num - 1);
+		}
+	}
+
 }
+
