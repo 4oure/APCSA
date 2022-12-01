@@ -27,6 +27,5 @@ public class scannerTutorialWMonaghan{
 			e.printStackTrace();
 
 		}
-
 	}
 }
