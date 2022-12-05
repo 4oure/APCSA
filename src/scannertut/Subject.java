@@ -14,60 +14,118 @@ Roster
  */
 
 package scannertut;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class Subject {
-	String holder;
-	File file = new File(holder);
-	public Subject(String filename){
-		holder = filename;
 
+	ArrayList<Integer> grades = new ArrayList<>();
+	String input = "" ;
+	int comma1 =0;
+	int comma2 = 0;
+	String subjectName = "";
+	String fileName = "";
+	String differentGrades;
+
+	public ArrayList<Integer> getGrades() {
+		return grades;
 	}
 
-	public double average() throws FileNotFoundException {
-		double avg = 0;
-		int counter = 0;
+	public void setGrades(ArrayList<Integer> grades) {
+		this.grades = grades;
+	}
+
+	public String getInput() {
+		return input;
+	}
+
+	public void setInput(String input) {
+		this.input = input;
+	}
+
+	public int getComma1() {
+		return comma1;
+	}
+
+	public void setComma1(int comma) {
+		this.comma1 = comma;
+	}
+
+	public int getComma2() {
+		return comma2;
+	}
+
+	public void setComma2(int period) {
+		this.comma2 = comma2;
+	}
+
+	public String getSubjectName() {
+		return subjectName;
+	}
+
+	public void setSubjectName(String subjectName) {
+		this.subjectName = subjectName;
+	}
+
+	public String getFileName() {
+		return fileName;
+	}
+
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+
+	public String getDifferentGrades() {
+		return differentGrades;
+	}
+
+	public void setDifferentGrades(String differentGrades) {
+		this.differentGrades = differentGrades;
+	}
+
+
+
+
+	public Subject(String filename) throws FileNotFoundException {
+
+		File file = new File(filename);
 		Scanner scanner = new Scanner(file);
-		while(scanner.hasNextLine()){
-			String line = scanner.nextLine();
-			String[] split = line.split(",");
-			double  newNumber = Double.parseDouble(split[1]);
-			avg+= newNumber;
-			counter++;
 
-		}
-		return avg;
+
+
 
 	}
 
-	public double highestGrade() throws FileNotFoundException {
-		double last =0;
-		Scanner scanner = new Scanner(file);
-		while(scanner.hasNextLine()){
-			String line = scanner.nextLine();
-			String[] split = line.split(",");
-			double  newNumber = Double.parseDouble(split[1]);
-			ArrayList<Double> myList = new ArrayList<>();
+	public void setUpArray(){
+		try{
+			comma1   = fileName.indexOf(",");
+			subjectName = fileName.substring(0,comma1);
 
-			myList.add(newNumber);
+			File file = new File(fileName);
 
-			last = Collections.max(myList);
+			Scanner scanner = new Scanner(file);
 
+			while (scanner.hasNextLine()){
+				input = scanner.nextLine();
+				comma2 = input.indexOf(",");
+
+				differentGrades = input.substring(comma2+1);
+				grades.add(Integer.parseInt(differentGrades));
+
+			}
+
+
+		} catch (FileNotFoundException e) {
+			throw new RuntimeException(e);
 		}
-	return last;
+
 	}
 
-	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
 
-		System.out.println("pls enter file name");
-		String fileName = in.nextLine();
-		Subject math = new Subject(fileName);
+	public static void main(String[] args) throws FileNotFoundException {
+
 	}
 
 
