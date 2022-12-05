@@ -90,19 +90,14 @@ public class Subject {
 
 	public Subject(String filename) throws FileNotFoundException {
 
-		File file = new File(filename);
-		Scanner scanner = new Scanner(file);
-
-
+		this.fileName= filename;
+		setUpArray();
 
 
 	}
 
 	public void setUpArray(){
 		try{
-			comma1   = fileName.indexOf(",");
-			subjectName = fileName.substring(0,comma1);
-
 			File file = new File(fileName);
 
 			Scanner scanner = new Scanner(file);
@@ -110,21 +105,40 @@ public class Subject {
 			while (scanner.hasNextLine()){
 				input = scanner.nextLine();
 				comma2 = input.indexOf(",");
+				subjectName = input.substring(0,comma2);
 
-				differentGrades = input.substring(comma2+1);
-				grades.add(Integer.parseInt(differentGrades));
+				differentGrades = input.substring(comma2+2); // has to be comma+1 bc substring is inclusive for first
+				grades.add(Integer.parseInt(differentGrades)); //string to int here, so we can load it into array
 
 			}
 
+			scanner.close();
+
 
 		} catch (FileNotFoundException e) {
+			e.printStackTrace();
 			throw new RuntimeException(e);
+
 		}
 
 	}
 
+	public double average(){
+		double avg = 0;
+		int divideByThis = grades.size();
+		for (int x : grades){
+			avg += x;
+		}
+
+		return avg/divideByThis;
+	}
+
 
 	public static void main(String[] args) throws FileNotFoundException {
+
+		Subject math = new Subject("/Users/gavin/IdeaProjects/APCSA/data");
+		System.out.println(math.average());
+
 
 	}
 

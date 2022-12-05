@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="ThursDec1">
-      <change afterPath="$PROJECT_DIR$/src/scannertut/help" afterDir="false" />
+    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="FridayDec5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scannertut/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scannertut/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scannertut/data" beforeDir="false" afterPath="$PROJECT_DIR$/data" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +29,7 @@
     <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/io/File.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/City.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/JCNeedsYourHelp/Administrator.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/JCNeedsYourHelp/Employee.java" root0="FORCE_HIGHLIGHTING" />
@@ -66,7 +65,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "proofread"
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -147,13 +146,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662996494777</updated>
-    </task>
-    <task id="LOCAL-00015" summary="monsep19">
-      <created>1663595449164</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1663595449164</updated>
     </task>
     <task id="LOCAL-00016" summary="frisep23">
       <created>1663947936355</created>
@@ -491,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669923143616</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="FridayDec5">
+      <created>1670247019500</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1670247019500</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -533,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tuessep13" />
     <MESSAGE value="wedsep14" />
     <MESSAGE value="monsep19" />
     <MESSAGE value="frisep23" />
@@ -558,7 +556,8 @@
     <MESSAGE value="tuesNov8" />
     <MESSAGE value="WedNov30" />
     <MESSAGE value="ThursDec1" />
-    <option name="LAST_COMMIT_MESSAGE" value="ThursDec1" />
+    <MESSAGE value="FridayDec5" />
+    <option name="LAST_COMMIT_MESSAGE" value="FridayDec5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -578,6 +577,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="14" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="15" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
