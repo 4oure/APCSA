@@ -14,6 +14,7 @@ Roster
  */
 
 package scannertut;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.lang.reflect.Array;
@@ -24,12 +25,12 @@ public class Subject {
 
 	ArrayList<Integer> grades = new ArrayList<>();
 	ArrayList<String> names = new ArrayList<>();
-	String input = "" ;
-	int comma1 =0;
+	String input = "";
+	int comma1 = 0;
 	int comma2 = 0;
 	String subjectName = "";
 	String fileName = "";
-	String differentGrades ="";
+	String differentGrades = "";
 
 	String name = "";
 
@@ -106,29 +107,27 @@ public class Subject {
 	}
 
 
-
-
 	public Subject(String filename) throws FileNotFoundException {
 
-		this.fileName= filename;
+		this.fileName = filename;
 		setUpArray();
 
 
 	}
 
-	public void setUpArray(){
-		try{
+	public void setUpArray() {
+		try {
 			File file = new File(fileName);
 
 			Scanner scanner = new Scanner(file);
 
-			while (scanner.hasNextLine()){
+			while (scanner.hasNextLine()) {
 				input = scanner.nextLine();
 				comma2 = input.indexOf(",");
 
 				name = input.substring(0, comma2);
 
-				differentGrades = input.substring(comma2+2); // has to be comma+1 bc substring is inclusive for first
+				differentGrades = input.substring(comma2 + 2); // has to be comma+1 bc substring is inclusive for first
 				grades.add(Integer.parseInt(differentGrades)); //string to int here, so we can load it into array
 				names.add(name);
 			}
@@ -144,30 +143,30 @@ public class Subject {
 
 	}
 
-	public double average(){
+	public double average() {
 		double avg = 0;
 		int divideByThis = grades.size();
-		for (int x : grades){
+		for (int x : grades) {
 			avg += x;
 		}
 
-		return avg/divideByThis;
+		return avg / divideByThis;
 	}
 
-	public String listAllNames(){
+	public String listAllNames() {
 		String returnNames = "";
 
-		for(String x : names){
-			returnNames += x+"\n";
+		for (String x : names) {
+			returnNames += x + "\n";
 		}
 		return returnNames;
 
 	}
 
-	public double giveHighestGrade(){
+	public double giveHighestGrade() {
 		int max = grades.get(0);
-		for(int i = 1; i < grades.size(); i++){
-			if(grades.get(i) > max){
+		for (int i = 1; i < grades.size(); i++) {
+			if (grades.get(i) > max) {
 				max = grades.get(i);
 
 			}
@@ -176,30 +175,42 @@ public class Subject {
 		return max;
 	}
 
-	public String giveSubjectName(){
+	public String giveSubjectName() {
 		String str = "";
 		int indexof = 0;
-		if(fileName.contains("/")){
+		if (fileName.contains("/")) {
 			indexof = fileName.indexOf("/");
-
-
 		}
-
 		str = fileName.substring(indexof);
 		return str;
 	}
 
 
 	public static void main(String[] args) throws FileNotFoundException {
+		boolean hello = true;
+
+		while (hello) {
+			Scanner whatFile = new Scanner(System.in);
+			System.out.println("give file pathway plz");
+			String fileThing = whatFile.nextLine();
+			Subject math = new Subject(fileThing);
+			System.out.println(math.average());
+			System.out.println(math.listAllNames());
+			System.out.println(math.giveHighestGrade());
+			System.out.println(math.giveSubjectName());
+			Scanner whatTwo = new Scanner(System.in);
+			System.out.println("want another file?? plz type yes or no");
+			String doTheyWantAnother = whatTwo.nextLine();
+			if (doTheyWantAnother.equalsIgnoreCase("true") || doTheyWantAnother.equalsIgnoreCase("yes")) {
+				continue;
+			}
+			if (doTheyWantAnother.equalsIgnoreCase("false") || doTheyWantAnother.equalsIgnoreCase("no")) {
+				System.out.println("ok bye");
+				hello = false;
+			}
 
 
-		Subject math = new Subject("/Users/gavin/IdeaProjects/APCSA/data");
-		System.out.println(math.average());
-		System.out.println(math.listAllNames());
-		System.out.println(math.giveHighestGrade());
-		System.out.println(math.giveSubjectName());
-
-
+		}
 
 
 	}
