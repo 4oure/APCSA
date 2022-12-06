@@ -47,7 +47,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2EfpSazR20vG1qJEX1Iow7tHOW1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -146,13 +146,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662996494777</updated>
-    </task>
-    <task id="LOCAL-00016" summary="frisep23">
-      <created>1663947936355</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1663947936355</updated>
     </task>
     <task id="LOCAL-00017" summary="frisep23">
       <created>1663948679814</created>
@@ -490,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670247019500</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="FridayDec5">
+      <created>1670248880437</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1670248880438</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

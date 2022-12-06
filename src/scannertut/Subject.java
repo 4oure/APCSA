@@ -16,18 +16,22 @@ Roster
 package scannertut;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Subject {
 
 	ArrayList<Integer> grades = new ArrayList<>();
+	ArrayList<String> names = new ArrayList<>();
 	String input = "" ;
 	int comma1 =0;
 	int comma2 = 0;
 	String subjectName = "";
 	String fileName = "";
-	String differentGrades;
+	String differentGrades ="";
+
+	String name = "";
 
 	public ArrayList<Integer> getGrades() {
 		return grades;
@@ -57,8 +61,24 @@ public class Subject {
 		return comma2;
 	}
 
-	public void setComma2(int period) {
+	public ArrayList<String> getNames() {
+		return names;
+	}
+
+	public void setNames(ArrayList<String> names) {
+		this.names = names;
+	}
+
+	public void setComma2(int comma2) {
 		this.comma2 = comma2;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getSubjectName() {
@@ -105,11 +125,12 @@ public class Subject {
 			while (scanner.hasNextLine()){
 				input = scanner.nextLine();
 				comma2 = input.indexOf(",");
-				subjectName = input.substring(0,comma2);
+
+				name = input.substring(0, comma2);
 
 				differentGrades = input.substring(comma2+2); // has to be comma+1 bc substring is inclusive for first
 				grades.add(Integer.parseInt(differentGrades)); //string to int here, so we can load it into array
-
+				names.add(name);
 			}
 
 			scanner.close();
@@ -133,11 +154,52 @@ public class Subject {
 		return avg/divideByThis;
 	}
 
+	public String listAllNames(){
+		String returnNames = "";
+
+		for(String x : names){
+			returnNames += x+"\n";
+		}
+		return returnNames;
+
+	}
+
+	public double giveHighestGrade(){
+		int max = grades.get(0);
+		for(int i = 1; i < grades.size(); i++){
+			if(grades.get(i) > max){
+				max = grades.get(i);
+
+			}
+		}
+
+		return max;
+	}
+
+	public String giveSubjectName(){
+		String str = "";
+		int indexof = 0;
+		if(fileName.contains("/")){
+			indexof = fileName.indexOf("/");
+
+
+		}
+
+		str = fileName.substring(indexof);
+		return str;
+	}
+
 
 	public static void main(String[] args) throws FileNotFoundException {
 
+
 		Subject math = new Subject("/Users/gavin/IdeaProjects/APCSA/data");
 		System.out.println(math.average());
+		System.out.println(math.listAllNames());
+		System.out.println(math.giveHighestGrade());
+		System.out.println(math.giveSubjectName());
+
+
 
 
 	}
