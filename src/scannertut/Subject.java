@@ -207,12 +207,6 @@ public class Subject {
 				System.out.println("ok bye");
 				hello = false;
 			}
-
-
 		}
-
-
 	}
-
-
 }
