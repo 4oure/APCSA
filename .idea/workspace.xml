@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="TuesDec6">
+    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="WedDec7">
+      <change afterPath="$PROJECT_DIR$/src/twentyHours/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/twentyHours/cleanSentiment.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/twentyHours/negativeAdjectives.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/twentyHours/positiveAdjectives.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scannertut/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scannertut/Subject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,13 +53,16 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2EfpSazR20vG1qJEX1Iow7tHOW1" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "14",
@@ -75,13 +81,13 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Subject">
-    <configuration name="JCNeedsYourHelp.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JCNeedsYourHelp.main" />
+  <component name="RunManager" selected="Application.Review">
+    <configuration name="Review" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="twentyHours.Review" />
       <module name="APCSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JCNeedsYourHelp.*" />
+          <option name="PATTERN" value="twentyHours.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Review" />
         <item itemvalue="Application.Subject" />
         <item itemvalue="Application.scannerTutorialWMonaghan" />
         <item itemvalue="Application.blastOff" />
         <item itemvalue="Application.firstDayRecursion" />
-        <item itemvalue="Application.JCNeedsYourHelp.main" />
       </list>
     </recent_temporary>
   </component>
@@ -146,13 +152,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662996494777</updated>
-    </task>
-    <task id="LOCAL-00020" summary="monsep26">
-      <created>1664211768741</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1664211768741</updated>
     </task>
     <task id="LOCAL-00021" summary="monsep26">
       <created>1664212669697</created>
@@ -490,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670338564987</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="WedDec7">
+      <created>1670427385797</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1670427385797</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -532,7 +538,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="monsep19" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="frisep23" />
     <MESSAGE value="monsep26" />
     <MESSAGE value="thurssep29" />
@@ -557,7 +563,8 @@
     <MESSAGE value="ThursDec1" />
     <MESSAGE value="FridayDec5" />
     <MESSAGE value="TuesDec6" />
-    <option name="LAST_COMMIT_MESSAGE" value="TuesDec6" />
+    <MESSAGE value="WedDec7" />
+    <option name="LAST_COMMIT_MESSAGE" value="WedDec7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
