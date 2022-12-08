@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="WedDec7">
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Review.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/cleanSentiment.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/negativeAdjectives.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/positiveAdjectives.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/twentyHours/sampleReview.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APCSA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/APCSA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/Review.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +64,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "14",
     "last_opened_file_path": "/Users/gavin/IdeaProjects/APCSA",
     "project.structure.last.edited": "Modules",
@@ -152,13 +158,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662996494777</updated>
-    </task>
-    <task id="LOCAL-00021" summary="monsep26">
-      <created>1664212669697</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1664212669697</updated>
     </task>
     <task id="LOCAL-00022" summary="monsep26">
       <created>1664213526633</created>
@@ -496,7 +495,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670427385797</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="WedDec7">
+      <created>1670428597366</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1670428597366</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

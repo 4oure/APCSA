@@ -1,4 +1,6 @@
 package twentyHours;
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Scanner;
 import java.io.File;
 import java.util.HashMap;
@@ -21,7 +23,7 @@ public class Review {
 
 	static{
 		try {
-			Scanner input = new Scanner(new File("cleanSentiment.csv"));
+			Scanner input = new Scanner(new File("/Users/gavin/IdeaProjects/APCSA/src/twentyHours/cleanSentiment.csv"));
 			while(input.hasNextLine()){
 				String[] temp = input.nextLine().split(",");
 				sentiment.put(temp[0],Double.parseDouble(temp[1]));
@@ -103,7 +105,7 @@ public class Review {
 	/**
 	 * Returns the ending punctuation of a string, or the empty string if there is none
 	 */
-	public static String getPunctuation( String word )
+	public static String getPunctuation(@NotNull String word )
 	{
 		String punc = "";
 		for(int i=word.length()-1; i >= 0; i--){
@@ -119,7 +121,7 @@ public class Review {
 	/**
 	 * Returns the word after removing any beginning or ending punctuation
 	 */
-	public static String removePunctuation( String word )
+	public static String removePunctuation(@NotNull String word )
 	{
 		while(word.length() > 0 && !Character.isAlphabetic(word.charAt(0)))
 		{
@@ -165,9 +167,20 @@ public class Review {
 		}
 	}
 
+	public static double totalSentiment(String fileName){
+//	//	String text = textToString(fileName);
+//	//	text = removePunctuation(text);
+
+return 0;
+	}
+
 	public static void main(String[] args) {
-		sentimentVal("happy");
-		sentimentVal("awful");
-		sentimentVal("idiot");
+		System.out.println(sentimentVal("hi"));
+		System.out.println(sentimentVal("awful"));
+		System.out.println(sentimentVal("dan"));
+		String text = textToString("/Users/gavin/IdeaProjects/APCSA/src/twentyHours/sampleReview.txt");
+		text = removePunctuation(text);
+		System.out.println(text);
+
 	}
 }
