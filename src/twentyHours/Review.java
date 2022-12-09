@@ -168,19 +168,36 @@ public class Review {
 	}
 
 	public static double totalSentiment(String fileName){
-//	//	String text = textToString(fileName);
-//	//	text = removePunctuation(text);
 
-return 0;
-	}
+		double temp = 0;
+		try {
+			Scanner input = new Scanner(new File(fileName));
+
+			//add 'words' in the file to the string, separated by a single space
+			while(input.hasNext()){
+				temp += sentimentVal(input.next());
+			}
+			input.close();
+
+		}
+		catch(Exception e){
+			System.out.println("Unable to locate " + fileName);
+		}
+
+		return temp;}
+
+
+
+
+
+
 
 	public static void main(String[] args) {
 		System.out.println(sentimentVal("hi"));
 		System.out.println(sentimentVal("awful"));
 		System.out.println(sentimentVal("dan"));
-		String text = textToString("/Users/gavin/IdeaProjects/APCSA/src/twentyHours/sampleReview.txt");
-		text = removePunctuation(text);
-		System.out.println(text);
+		System.out.println(totalSentiment("/Users/gavin/IdeaProjects/APCSA/src/twentyHours/sampleReview.txt"));
+
 
 	}
 }
