@@ -234,6 +234,10 @@ public class Review {
 //		System.out.println(totalSentiment("/Users/gavin/IdeaProjects/APCSA/src/twentyHours/sampleReview.txt"));
 //		System.out.println(starRating("/Users/gavin/IdeaProjects/APCSA/src/twentyHours/sampleReview.txt"));
 //
-		System.out.println(fakeReview("/Users/gavin/IdeaProjects/APCSA/src/twentyHours/sampleReview.txt", false));
+		System.out.println(fakeReview("/Users/gavin/IdeaProjects/APCSA/src/twentyHours/sampleReview.txt", true));
+		String hi = "hello my name is gavin";
+		System.out.println(hi.substring(1));
+
+
 	}
 }
