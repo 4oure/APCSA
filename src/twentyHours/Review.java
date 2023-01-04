@@ -15,8 +15,6 @@ public class Review {
 	private static ArrayList<String> negAdjectives = new ArrayList<String>();
 
 
-	private static final String SPACE = " ";
-
 	static {
 		try {
 			Scanner input = new Scanner(new File("/Users/gavin/IdeaProjects/APCSA/src/twentyHours/cleanSentiment.csv"));
@@ -235,7 +233,7 @@ public class Review {
 //		System.out.println(starRating("/Users/gavin/IdeaProjects/APCSA/src/twentyHours/sampleReview.txt"));
 //
 		System.out.println(fakeReview("/Users/gavin/IdeaProjects/APCSA/src/twentyHours/sampleReview.txt", true));
-		String hi = "hello my name is gavin";
+		String hi = "One Word";
 		System.out.println(hi.substring(1));
 
 
