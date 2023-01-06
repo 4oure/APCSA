@@ -3,6 +3,7 @@ import java.util.ArrayList;
 
 class Inventory {
 
+
 	public static int checkItem(int row, int col, String item, ArrayList<String> inventory, Room[][] room, int score) {
 
 		// Check if item is a valid room item

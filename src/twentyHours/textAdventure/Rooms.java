@@ -37,7 +37,7 @@ class Rooms {
 		room[2][7].setName("Foyer");
 		room[2][7].setDescription("You are in the Foyer. Sunlight filters through a skylight.");
 		room[2][7].setItems("keys");
-		room[2][7].setItems("Picture of a man");
+		room[2][7].setItems("picture of a man"); // fixed this to be lowercase becuase the parsing thing makes it lowercase
 		room[2][7].setExits(exits);
 
 		exits[0] = ""; exits[1] = ""; exits[2] = "e"; exits[3] = "";
@@ -120,7 +120,7 @@ class Room {
 		this.items.add(item);
 	}
 
-	public void setExits(String exit[]) {
+	public void setExits(String[] exit) {
 		for(int i = 0; i < exit.length; i++)
 			this.exits.add(exit[i]);
 	}

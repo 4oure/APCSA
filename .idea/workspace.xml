@@ -1,132 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="TuesDay13">
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/OpenEndedActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/CodeResources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/MacOS/Opera GX Installer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/MacOS/package_copy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/PkgInfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/MainMenu.nib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/Silent.nib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/be.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/be.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/bg.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/bg.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/bn.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/bn.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/ca.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/ca.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/cs.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/cs.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/da.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/da.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/de.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/de.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/el.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/el.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/en.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/en.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/en_GB.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/en_GB.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/es.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/es.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/es_419.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/es_419.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/eula_desktop_eea.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/eula_desktop_row.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/fa.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/fa.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/fi.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/fi.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/fil.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/fil.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/fr.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/fr.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/fr_CA.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/fr_CA.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/hi.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/hi.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/hr.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/hr.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/hu.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/hu.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/icon-error.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/icon-error@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/icon-o.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/icon-o@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/icon.icns" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/id.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/id.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/it.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/it.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/ja.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/ja.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/ko.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/ko.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/lt.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/lt.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/lv.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/lv.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/ms.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/ms.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/nb.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/nb.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/nl.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/nl.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/pl.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/pl.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/policy_eea.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/policy_row.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/pt.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/pt.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/pt_PT.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/pt_PT.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/ro.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/ro.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/ru.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/ru.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/sk.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/sk.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/sr.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/sr.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/sv.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/sv.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/sw.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/sw.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/ta.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/ta.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/te.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/te.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/th.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/th.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/tl.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/tl.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/tos_eea.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/tos_row.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/tr.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/tr.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/uk.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/uk.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/vi.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/vi.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/zh_CN.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/zh_CN.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/zh_TW.lproj/InfoPlist.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/Resources/zh_TW.lproj/Localizable.strings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/Opera GX Installer.app/Contents/_CodeSignature/CodeResources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/OperaGXSetup.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/jre-8u351-macosx-x64.dmg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Input.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Inventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Rooms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Sounds.java" afterDir="false" />
+    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="WedJan4">
+      <change afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/directions.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/twentyHours/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Rooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Rooms.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +21,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowGroupBy>Package</toolWindowGroupBy>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -199,7 +83,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.editor"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -209,7 +93,20 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Review">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="twentyHours.textAdventure.Main" />
+      <module name="APCSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="twentyHours.textAdventure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OpenEndedActivity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="twentyHours.OpenEndedActivity" />
       <module name="APCSA" />
@@ -249,13 +146,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="blastOff" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="blastOff" />
-      <module name="APCSA" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="scannerTutorialWMonaghan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="scannertut.scannerTutorialWMonaghan" />
       <module name="APCSA" />
@@ -270,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Review" />
         <item itemvalue="Application.OpenEndedActivity" />
         <item itemvalue="Application.Subject" />
         <item itemvalue="Application.scannerTutorialWMonaghan" />
-        <item itemvalue="Application.blastOff" />
       </list>
     </recent_temporary>
   </component>
@@ -286,20 +176,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662996494777</updated>
-    </task>
-    <task id="LOCAL-00026" summary="frisep30">
-      <created>1664545601910</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1664545601910</updated>
-    </task>
-    <task id="LOCAL-00027" summary="monoct3">
-      <created>1664825772039</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1664825772039</updated>
     </task>
     <task id="LOCAL-00028" summary="wedoct5">
       <created>1664984373184</created>
@@ -630,7 +506,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670951660152</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="WedJan4">
+      <created>1672849522233</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1672849522233</updated>
+    </task>
+    <task id="LOCAL-00076" summary="WedJan4">
+      <created>1672849602283</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1672849602283</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -673,7 +563,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="frisep30" />
     <MESSAGE value="monoct3" />
     <MESSAGE value="wedoct5" />
     <MESSAGE value="thursoct6" />
@@ -698,7 +587,8 @@
     <MESSAGE value="FriDec9" />
     <MESSAGE value="MonDec12" />
     <MESSAGE value="TuesDay13" />
-    <option name="LAST_COMMIT_MESSAGE" value="TuesDay13" />
+    <MESSAGE value="WedJan4" />
+    <option name="LAST_COMMIT_MESSAGE" value="WedJan4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
