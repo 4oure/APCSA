@@ -9,7 +9,7 @@ class Inventory {
 		// Check if item is a valid room item
 		boolean validRoomItem = false;
 		for (String roomItems : room[row][col].items) {
-			if (roomItems.equals(item)) {
+			if (roomItems.equalsIgnoreCase(item)) { // added ignorecase
 				validRoomItem = true;
 				break;
 			}
@@ -18,7 +18,7 @@ class Inventory {
 		// Check if item is already in inventory
 		boolean inInventory = false;
 		for (String itemInInv : inventory) {
-			if (itemInInv.equals(item)) {
+			if (itemInInv.equalsIgnoreCase(item)) { // added ignore case
 				inInventory = true;
 				break;
 			}

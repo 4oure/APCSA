@@ -47,7 +47,7 @@ public class Main {
 			String input = Input.getInput();
 
 			// Movement commands
-			switch (input) {
+			switch (input.toLowerCase()) {
 				case "w":
 					if (room[row][col].exits.contains("s")) {
 						row++;

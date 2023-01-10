@@ -1,6 +1,8 @@
 package twentyHours.textAdventure;
 import java.util.ArrayList;
 
+// https://docs.google.com/document/d/1ijHOY4zzAx5DeaaYOppCCMk5OaVkJTAnBKgjdxN-XPk/edit?usp=sharing
+
 class Rooms {
 
 	static String exits[] = new String[4];
@@ -13,47 +15,89 @@ class Rooms {
 				room[i][j] = new Room(i, "", "", null);
 			}
 		}
+		//w = row++
+		//s = row--
+		//a = col--
+		//d = col ++
+		// row, col
+
+		// room 1, starter
+		exits[0] = "s"; exits[1] = ""; exits[2] = ""; exits[3] = "";
+		room[0][0].setNumber(0);
+		room[0][0].setName("Entry Way");
+		room[0][0].setDescription("You are in the entryway to the old house.");
+		room[0][0].setItems("newspaper");
+		room[0][0].setItems("small box");
+		room[0][0].setExits(exits);
+
+		// room 2, x from room 1
+		exits[0] = "w"; exits[1] = "s"; exits[2] = ""; exits[3] = "";
+		room[1][0].setNumber(1);
+		room[1][0].setName("Hallway to the Foyer");
+		room[1][0].setDescription("You are in the Hallway to the Foyer.");
+		room[1][0].setItems("mouse");
+		room[1][0].setItems("piece of paper");
+		room[1][0].setExits(exits);
+
+		exits[0] = "w"; exits[1] = "s"; exits[2] = ""; exits[3] = "";
+		room[2][0].setNumber(2);
+		room[2][0].setName("Foyer");
+		room[2][0].setDescription("You are in the Foyer. Sunlight filters through a skylight.");
+		room[2][0].setItems("keys");
+		room[2][0].setItems("picture of a man"); // fixed this to be lowercase because the parsing thing makes it lowercase
+		room[2][0].setExits(exits);
+
+		exits[0] = "w"; exits[1] = "s"; exits[2] = ""; exits[3] = "";
+		room[3][0].setNumber(3);
+		room[3][0].setName("Kitchen");
+		room[3][0].setDescription("You are in the kitchen.");
+		room[3][0].setItems("toaster");
+		room[3][0].setItems("bottle");
+		room[3][0].setItems("bloody knife");
+		room[3][0].setExits(exits);
+
+		exits[0] = "w"; exits[1] = "s"; exits[2] = ""; exits[3] = "";
+		room[4][0].setNumber(4);
+		room[4][0].setName("Bathroom");
+		room[4][0].setDescription("You are in the bathroom.");
+		room[4][0].setItems("toilet paper");
+		room[4][0].setItems("towel");
+		room[4][0].setItems("soap");
+
+		// start of my new rooms
+
+		exits[0] = "w"; exits[1] = "s"; exits[2] = ""; exits[3] = "";
+		room[5][0].setNumber(5);
+		room[5][0].setName("Living Room");
+		room[5][0].setDescription("You are in the living room. The carpet has a blood-stained spot. I wonder whose blood that is..");
+		room[5][0].setItems("tv remote");
+		room[5][0].setItems("coaster");
+		room[5][0].setItems("napkins");
+
+		room[6][0].setNumber(6);
+		room[6][0].setName("Bedroom Hallway");
+		room[6][0].setDescription("You are in the hallway that leads to the master bedroom. If the murderer lives in this very house, perhaps he would store his murder weapons in the room he sleeps in.");
+		room[6][0].setItems("broom");
+		room[6][0].setItems("slippers");
+
+		room[6][1].setNumber(9);
+		room[6][1].setName("End of bedroom hallway");
+		room[6][1].setDescription("This is the end of the hallway. There is a splatter of some sort of liquid on the wall.");
+		room[6][1].setItems("cup");
+		room[6][1].setItems("untied shoe");
+		room[6][1].setItems("soccer ball");
+
+		room[6][2].setNumber(8);
+		room[6][2].setName("Bedroom");
+		room[6][2].setDescription("You are now in the bedroom. The bed is unmade, there are clothes on the floor, and one of the drawers are open.");
+		room[6][2].setItems("white wrinkled t-shirt");
+		room[6][2].setItems("");
 
 
-		exits[0] = ""; exits[1] = "s"; exits[2] = ""; exits[3] = "";
-		room[0][7].setNumber(0);
-		room[0][7].setName("Entry Way");
-		room[0][7].setDescription("You are in the entryway to the old house.");
-		room[0][7].setItems("newspaper");
-		room[0][7].setItems("small box");
-		room[0][7].setExits(exits);
 
 
-		exits[0] = "n"; exits[1] = "s"; exits[2] = ""; exits[3] = "";
-		room[1][7].setNumber(1);
-		room[1][7].setName("Hallway to the Foyer");
-		room[1][7].setDescription("You are in the Hallway to the Foyer.");
-		room[1][7].setItems("mouse");
-		room[1][7].setItems("piece of paper");
-		room[1][7].setExits(exits);
 
-		exits[0] = "n"; exits[1] = "s"; exits[2] = ""; exits[3] = "w";
-		room[2][7].setNumber(2);
-		room[2][7].setName("Foyer");
-		room[2][7].setDescription("You are in the Foyer. Sunlight filters through a skylight.");
-		room[2][7].setItems("keys");
-		room[2][7].setItems("picture of a man"); // fixed this to be lowercase becuase the parsing thing makes it lowercase
-		room[2][7].setExits(exits);
 
-		exits[0] = ""; exits[1] = ""; exits[2] = "e"; exits[3] = "";
-		room[3][7].setNumber(3);
-		room[3][7].setName("Kitchen");
-		room[3][7].setDescription("You are in your kitchen.");
-		room[3][7].setItems("toaster");
-		room[3][7].setItems("bottle");
-		room[3][7].setItems("bloody knife");
-		room[3][7].setExits(exits);
-
-		room[1][1].setNumber(4);
-		room[1][1].setName("Bathroom");
-		room[1][1].setDescription("You are in your bathroom.");
-		room[1][1].setItems("toilet paper");
-		room[1][1].setItems("magazine");
 	}
 
 	public static void print(Room[][] room, int x, int y) {
