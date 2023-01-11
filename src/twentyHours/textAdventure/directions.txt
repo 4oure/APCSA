@@ -17,8 +17,10 @@ Make the code more efficient or streamlined 20
 Create a way to “win” the game
                  20
 Make the game more interactive better feedback, sounds, etc.  10
-// changed 'NWSE' to 'WASD'
+// changed 'NWSE' to 'WASD'.. nwse
 // changed so that help cmds print off the bat so that u dont have to guess
+// made fun of dan with energy drink reference
+// added notes so the gamer/text-adventurist can get clues
 
 Total	                                                      100
 Optional

@@ -49,7 +49,7 @@ public class Main {
 			// Movement commands
 			switch(input.toLowerCase()) {
 				case "w":
-					if (room[row][col].exits.contains("s")) {
+					if (room[row][col].exits.contains("w")) {
 						row++;
 						Rooms.print(room, row, col);
 					} else {
@@ -57,7 +57,7 @@ public class Main {
 					}
 					break;
 				case "s":
-					if (room[row][col].exits.contains("w")) {
+					if (room[row][col].exits.contains("s")) {
 						row--;
 						Rooms.print(room, row, col);
 					} else {
@@ -65,7 +65,7 @@ public class Main {
 					}
 					break;
 				case "d":
-					if (room[row][col].exits.contains("e")) {
+					if (room[row][col].exits.contains("d")) {
 						col++;
 						Rooms.print(room, row, col);
 					} else {
@@ -73,7 +73,7 @@ public class Main {
 					}
 					break;
 				case "a":
-					if (room[row][col].exits.contains("w")) {
+					if (room[row][col].exits.contains("a")) {
 						col--;
 						Rooms.print(room, row, col);
 					} else {
