@@ -16,7 +16,7 @@ public class Main {
 		Room[][] room = new Room[HEIGHT][WIDTH];
 		Rooms.build(room, HEIGHT, WIDTH);
 		int row = 0;
-		int col = 7;
+		int col = 0;
 		int score = 0;
 
 
@@ -26,9 +26,9 @@ public class Main {
 		ArrayList<String> inventory = new ArrayList<>();
 
 		// Title Screen
-		System.out.println("+-------------------------------+");
-		System.out.println("| Text Adventure: Skeleton Code |");
-		System.out.println("+-------------------------------+");
+		System.out.println("+-----------------------------------+");
+		System.out.println("| Horror Text Adventure: Greenhouse |");
+		System.out.println("+-----------------------------------+");
 
 		// help commands output
 		Input.helpCMDS();
@@ -50,7 +50,7 @@ public class Main {
 			switch(input.toLowerCase()) {
 				case "w":
 					if (room[row][col].exits.contains("w")) {
-						row++;
+						row--;
 						Rooms.print(room, row, col);
 					} else {
 						System.out.println("You can't go that way.");
@@ -58,7 +58,7 @@ public class Main {
 					break;
 				case "s":
 					if (room[row][col].exits.contains("s")) {
-						row--;
+						row++;
 						Rooms.print(room, row, col);
 					} else {
 						System.out.println("You can't go that way.");
@@ -94,6 +94,7 @@ public class Main {
 							switch (item) {
 								case "reign energy drink" -> System.out.println("EUGH. DAN MUST HAVE BEEN HERE.");
 								case "note" -> System.out.println("The note reads: You will never find me. I am not in this house.");
+								case "car" -> System.out.println("You can not store a car in your inventory.");
 							}
 							// Sounds.playItemPickup();
 							score = Inventory.checkItem(row, col, item, inventory, room, score);

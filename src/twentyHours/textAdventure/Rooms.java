@@ -15,8 +15,8 @@ class Rooms {
 				room[i][j] = new Room(i, "", "", null);
 			}
 		}
-		//w = row++
-		//s = row--
+		//w = row--
+		//s = row++
 		//a = col--
 		//d = col ++
 		// row, col
@@ -86,19 +86,19 @@ class Rooms {
 		room[5][1].setItems("cheeseburger from mcdonalds");
 		room[5][1].setItems("reign energy drink");
 
-		room[6][1].setNumber(9);
-		room[6][1].setName("End of bedroom hallway");
-		room[6][1].setDescription("This is the end of the hallway. There is a splatter of some sort of liquid on the wall.");
-		room[6][1].setItems("cup");
-		room[6][1].setItems("untied shoe");
-		room[6][1].setItems("soccer ball");
-
 		room[6][2].setNumber(8);
 		room[6][2].setName("Bedroom");
 		room[6][2].setDescription("You are now in the bedroom. The bed is unmade, there are clothes on the floor, and one of the drawers are open.");
 		room[6][2].setItems("white wrinkled t-shirt");
 		room[6][2].setItems("pillow");
 		room[6][2].setItems("teddy bear");
+
+		room[6][1].setNumber(9);
+		room[6][1].setName("End of bedroom hallway");
+		room[6][1].setDescription("This is the end of the hallway. There is a splatter of some sort of liquid on the wall.");
+		room[6][1].setItems("cup");
+		room[6][1].setItems("untied shoe");
+		room[6][1].setItems("soccer ball");
 
 		room[6][3].setNumber(10);
 		room[6][3].setName("Bedroom Bathroom");
@@ -107,7 +107,9 @@ class Rooms {
 		room[6][3].setItems("hand towel");
 		room[6][3].setItems("note");
 
-
+		room[2][1].setNumber(11);
+		room[2][1].setName("Garage");
+		room[2][1].setDescription("Surely if the murderer fled, he had to have taken a car.");
 
 
 
