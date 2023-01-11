@@ -80,6 +80,12 @@ class Rooms {
 		room[6][0].setItems("broom");
 		room[6][0].setItems("slippers");
 
+		room[5][1].setNumber(7);
+		room[5][1].setName("Dining Room");
+		room[5][1].setDescription("What was for dinner? Guess you'll find out, since you're now in the dining room.");
+		room[5][1].setItems("cheeseburger from mcdonalds");
+		room[5][1].setItems("reign energy drink");
+
 		room[6][1].setNumber(9);
 		room[6][1].setName("End of bedroom hallway");
 		room[6][1].setDescription("This is the end of the hallway. There is a splatter of some sort of liquid on the wall.");
@@ -91,7 +97,17 @@ class Rooms {
 		room[6][2].setName("Bedroom");
 		room[6][2].setDescription("You are now in the bedroom. The bed is unmade, there are clothes on the floor, and one of the drawers are open.");
 		room[6][2].setItems("white wrinkled t-shirt");
-		room[6][2].setItems("");
+		room[6][2].setItems("pillow");
+		room[6][2].setItems("teddy bear");
+
+		room[6][3].setNumber(10);
+		room[6][3].setName("Bedroom Bathroom");
+		room[6][3].setDescription("You are now in the bathroom connected to the bedroom. I wonder what a murderer uses to shower..");
+		room[6][3].setItems("toothbrush");
+		room[6][3].setItems("hand towel");
+		room[6][3].setItems("note");
+
+
 
 
 

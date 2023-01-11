@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
 
 
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 
 		// Build rooms
 		final int HEIGHT = 15;
@@ -47,7 +47,7 @@ public class Main {
 			String input = Input.getInput();
 
 			// Movement commands
-			switch (input.toLowerCase()) {
+			switch(input.toLowerCase()) {
 				case "w":
 					if (room[row][col].exits.contains("s")) {
 						row++;
@@ -91,6 +91,10 @@ public class Main {
 					if (input.length() > 4 && ((input.substring(0, 4).equals("get ") || input.substring(0, 5).equals("take ")))) {
 						if (input.substring(input.indexOf(' ')).length() > 1) {
 							String item = input.substring(input.indexOf(' ') + 1);
+							switch (item) {
+								case "reign energy drink" -> System.out.println("EUGH. DAN MUST HAVE BEEN HERE.");
+								case "note" -> System.out.println("The note reads: You will never find me. I am not in this house.");
+							}
 							// Sounds.playItemPickup();
 							score = Inventory.checkItem(row, col, item, inventory, room, score);
 						}
