@@ -1,4 +1,5 @@
 package twentyHours.textAdventure;
+
 import java.util.ArrayList;
 
 // https://docs.google.com/document/d/1ijHOY4zzAx5DeaaYOppCCMk5OaVkJTAnBKgjdxN-XPk/edit?usp=sharing
@@ -22,7 +23,10 @@ class Rooms {
 		// row, col
 
 		// room 1, starter
-		exits[0] = "s"; exits[1] = ""; exits[2] = ""; exits[3] = "";
+		exits[0] = "s";
+		exits[1] = "";
+		exits[2] = "";
+		exits[3] = "";
 		room[0][0].setNumber(0);
 		room[0][0].setName("Entry Way");
 		room[0][0].setDescription("You are in the entryway to the old house.");
@@ -31,7 +35,10 @@ class Rooms {
 		room[0][0].setExits(exits);
 
 		// room 2, x from room 1
-		exits[0] = "w"; exits[1] = "s"; exits[2] = ""; exits[3] = "";
+		exits[0] = "w";
+		exits[1] = "s";
+		exits[2] = "";
+		exits[3] = "";
 		room[1][0].setNumber(1);
 		room[1][0].setName("Hallway to the Foyer");
 		room[1][0].setDescription("You are in the Hallway to the Foyer.");
@@ -39,7 +46,10 @@ class Rooms {
 		room[1][0].setItems("piece of paper");
 		room[1][0].setExits(exits);
 
-		exits[0] = "w"; exits[1] = "s"; exits[2] = ""; exits[3] = "";
+		exits[0] = "w";
+		exits[1] = "s";
+		exits[2] = "";
+		exits[3] = "";
 		room[2][0].setNumber(2);
 		room[2][0].setName("Foyer");
 		room[2][0].setDescription("You are in the Foyer. Sunlight filters through a skylight.");
@@ -47,7 +57,10 @@ class Rooms {
 		room[2][0].setItems("picture of a man"); // fixed this to be lowercase because the parsing thing makes it lowercase
 		room[2][0].setExits(exits);
 
-		exits[0] = "w"; exits[1] = "s"; exits[2] = ""; exits[3] = "";
+		exits[0] = "w";
+		exits[1] = "s";
+		exits[2] = "";
+		exits[3] = "";
 		room[3][0].setNumber(3);
 		room[3][0].setName("Kitchen");
 		room[3][0].setDescription("You are in the kitchen.");
@@ -56,7 +69,10 @@ class Rooms {
 		room[3][0].setItems("bloody knife");
 		room[3][0].setExits(exits);
 
-		exits[0] = "w"; exits[1] = "s"; exits[2] = ""; exits[3] = "";
+		exits[0] = "w";
+		exits[1] = "s";
+		exits[2] = "";
+		exits[3] = "";
 		room[4][0].setNumber(4);
 		room[4][0].setName("Bathroom");
 		room[4][0].setDescription("You are in the bathroom.");
@@ -67,7 +83,10 @@ class Rooms {
 
 		// start of my new rooms
 
-		exits[0] = "w"; exits[1] = "s"; exits[2] = "d"; exits[3] = "";
+		exits[0] = "w";
+		exits[1] = "s";
+		exits[2] = "d";
+		exits[3] = "";
 		room[5][0].setNumber(5);
 		room[5][0].setName("Living Room");
 		room[5][0].setDescription("You are in the living room. The carpet has a blood-stained spot. I wonder whose blood that is..");
@@ -133,7 +152,6 @@ class Rooms {
 		room[2][3].setDescription("The neighbor's front yard is very ugly.");
 		room[2][3].setItems("pile of dirt");
 		room[2][3].setItems("bug");
-		room[3][3].setItems("greenhouse key");
 
 		room[3][2].setNumber(15);
 		room[3][2].setName("Back Yard");
@@ -141,14 +159,20 @@ class Rooms {
 		room[3][2].setItems("pool noodle");
 		room[3][2].setItems("bottle of water");
 
-		exits[0] = "w"; exits[1]= "a"; exits[2] = ""; exits[3] = "";
+		exits[0] = "w";
+		exits[1] = "a";
+		exits[2] = "";
+		exits[3] = "";
 		room[3][3].setNumber(16);
 		room[3][3].setName("Neighbor's back yard");
 		room[3][3].setDescription("Here is the neighbor's back yard. Surrounded by a white pickett fence, there appears to be a greenhouse.");
 		room[3][3].setItems("pizza box");
 		room[3][3].setExits(exits);
 
-		exits[0] ="w"; exits[1]="";exits[2]="";exits[3]="";
+		exits[0] = "w";
+		exits[1] = "";
+		exits[2] = "";
+		exits[3] = "";
 		room[4][3].setNumber(17);
 		room[4][3].setName("Shed in the back yard");
 		room[4][3].setDescription("An old shed built out of local timber. Perhaps he'd hide a body in here if the homeowner did it.");
@@ -156,15 +180,21 @@ class Rooms {
 		room[4][3].setItems("empty beer can");
 		room[4][3].setExits(exits);
 
-
-
+		exits[0] = "a";
+		exits[1] = "";
+		exits[2] = "";
+		exits[3] = "";
+		room[3][4].setNumber(18);
+		room[3][4].setName("Neighbor's greenhouse");
+		room[3][4].setDescription("The neighbor's greenhouse. A lot of pretty plants in here accompanied with an awful smell. A trail of blood leads to the back of the greenhouse.");
+		room[3][4].setItems("shovel");
+		room[3][4].setItems("rose");
+		room[3][4].setItems("blood-soaked hatchet");
+		room[3][4].setExits(exits);
 
 
 
 		// reminder to lock the greenhouse
-
-
-
 
 
 	}
@@ -173,16 +203,15 @@ class Rooms {
 
 		System.out.println();
 
-		if (!room[x][y].getItems().isEmpty()){
+		if (!room[x][y].getItems().isEmpty()) {
 			System.out.println(room[x][y].getDescription() + " - at Position: " + x + "," + y);
-			System.out.println("You see: " + room[x][y].getItems()) ;
-		}
-		else
+			System.out.println("You see: " + room[x][y].getItems());
+		} else
 			System.out.println("You see nothingness: " + " - in Position: " + x + "," + y);
 	}
 
 	// Remove item from room when added to inventory
-	public static void removeItem(Room[][] room, int x, int y, String item) {
+	public static void removeItem(Room[] [] room, int x, int y, String item) {
 
 		room[x][y].deleteItem(item);
 	}
@@ -234,7 +263,7 @@ class Room {
 	}
 
 	public void setExits(String[] exit) {
-		for(int i = 0; i < exit.length; i++)
+		for (int i = 0; i < exit.length; i++)
 			this.exits.add(exit[i]);
 	}
 
