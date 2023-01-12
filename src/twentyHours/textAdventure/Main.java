@@ -1,4 +1,5 @@
 package twentyHours.textAdventure;
+
 import java.util.ArrayList;
 import java.util.MissingFormatArgumentException;
 import java.util.Scanner;
@@ -18,8 +19,6 @@ public class Main {
 		int row = 0;
 		int col = 0;
 		int score = 0;
-
-
 
 
 		// Load inventory
@@ -47,7 +46,7 @@ public class Main {
 			String input = Input.getInput();
 
 			// Movement commands
-			switch(input.toLowerCase()) {
+			switch (input.toLowerCase()) {
 				case "w":
 					if (room[row][col].exits.contains("w")) {
 						row--;
@@ -93,7 +92,8 @@ public class Main {
 							String item = input.substring(input.indexOf(' ') + 1);
 							switch (item) {
 								case "reign energy drink" -> System.out.println("EUGH. DAN MUST HAVE BEEN HERE.");
-								case "note" -> System.out.println("The note reads: You will never find me. I am not in this house.");
+								case "note" ->
+										System.out.println("The note reads: You will never find me. I am not in this house.");
 								case "car" -> System.out.println("You can not store a car in your inventory.");
 							}
 							// Sounds.playItemPickup();

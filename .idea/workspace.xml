@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="changed score--">
+    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="all rooms except 19 before messing with exits for most">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Rooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Rooms.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,20 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662996494777</updated>
-    </task>
-    <task id="LOCAL-00034" summary="thursoct20">
-      <created>1666297033786</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1666297033786</updated>
-    </task>
-    <task id="LOCAL-00035" summary="frioct21">
-      <created>1666373729144</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1666373729144</updated>
     </task>
     <task id="LOCAL-00036" summary="frioct21">
       <created>1666374361660</created>
@@ -516,7 +505,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673532525472</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="finally fixed score--">
+      <created>1673538290390</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1673538290390</updated>
+    </task>
+    <task id="LOCAL-00084" summary="all rooms except 19 before messing with exits for most">
+      <created>1673539178900</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1673539178900</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -559,8 +562,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="frioct21" />
-    <MESSAGE value="tueoct25" />
     <MESSAGE value="wedoct26" />
     <MESSAGE value="thursoct27" />
     <MESSAGE value="afterIAddedPayroll" />
@@ -584,7 +585,9 @@
     <MESSAGE value="WedJan11" />
     <MESSAGE value="FIXED W++ S++" />
     <MESSAGE value="changed score--" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed score--" />
+    <MESSAGE value="finally fixed score--" />
+    <MESSAGE value="all rooms except 19 before messing with exits for most" />
+    <option name="LAST_COMMIT_MESSAGE" value="all rooms except 19 before messing with exits for most" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
