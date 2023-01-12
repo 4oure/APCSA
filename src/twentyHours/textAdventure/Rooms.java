@@ -95,69 +95,119 @@ class Rooms {
 		room[5][0].setItems("napkins");
 		room[5][0].setExits(exits);
 
+		exits[0] = "d";
+		exits[1] = "";
+		exits[2] = "";
+		exits[3] = "";
 		room[6][0].setNumber(6);
 		room[6][0].setName("Bedroom Hallway");
 		room[6][0].setDescription("You are in the hallway that leads to the master bedroom. If the murderer lives in this very house, perhaps he would store his murder weapons in the room he sleeps in.");
 		room[6][0].setItems("broom");
 		room[6][0].setItems("slippers");
+		room[6][0].setExits(exits);
 
+		exits[0] = "a";
+		exits[1] = "";
+		exits[2] = "";
+		exits[3] = "";
 		room[5][1].setNumber(7);
 		room[5][1].setName("Dining Room");
 		room[5][1].setDescription("What was for dinner? Guess you'll find out, since you're now in the dining room.");
 		room[5][1].setItems("cheeseburger from mcdonalds");
 		room[5][1].setItems("reign energy drink");
+		room[5][1].setExits(exits);
 
+		exits[0] = "a";
+		exits[1] = "d";
+		exits[2] = "s";
+		exits[3] = "";
 		room[6][2].setNumber(8);
 		room[6][2].setName("Bedroom");
 		room[6][2].setDescription("You are now in the bedroom. The bed is unmade, there are clothes on the floor, and one of the drawers are open.");
 		room[6][2].setItems("white wrinkled t-shirt");
 		room[6][2].setItems("pillow");
 		room[6][2].setItems("teddy bear");
+		room[6][2].setExits(exits);
 
+		exits[0] = "a";
+		exits[1] = "d";
+		exits[2] = "";
+		exits[3] = "";
 		room[6][1].setNumber(9);
 		room[6][1].setName("End of bedroom hallway");
 		room[6][1].setDescription("This is the end of the hallway. There is a splatter of some sort of liquid on the wall.");
 		room[6][1].setItems("cup");
 		room[6][1].setItems("untied shoe");
 		room[6][1].setItems("soccer ball");
+		room[6][1].setExits(exits);
 
+		exits[0] = "a";
+		exits[1] = "";
+		exits[2] = "";
+		exits[3] = "";
 		room[6][3].setNumber(10);
 		room[6][3].setName("Bedroom Bathroom");
 		room[6][3].setDescription("You are now in the bathroom connected to the bedroom. I wonder what a murderer uses to shower..");
 		room[6][3].setItems("toothbrush");
 		room[6][3].setItems("hand towel");
 		room[6][3].setItems("note");
+		room[6][3].setExits(exits);
 
+		exits[0] = "a";
+		exits[1] = "d";
+		exits[2] = "";
+		exits[3] = "";
 		room[2][1].setNumber(11);
 		room[2][1].setName("Garage");
 		room[2][1].setDescription("Surely if the murderer fled, he had to have taken a car.");
 		room[2][1].setItems("wrench");
 		room[2][1].setItems("tire pressure gauge");
 		room[2][1].setItems("car keys");
+		room[2][1].setExits(exits);
 
+		exits[0] = "w";
+		exits[1] = "";
+		exits[2] = "";
+		exits[3] = "";
 		room[7][2].setNumber(12);
 		room[7][2].setName("Bedroom walk-in closet");
 		room[7][2].setDescription("The closet holds what a man holds closest to his heart.");
 		room[7][2].setItems("fancy socks");
+		room[7][2].setExits(exits);
 
+		exits[0] = "a";
+		exits[1] = "d";
+		exits[2] = "s";
+		exits[3] = "";
 		room[2][2].setNumber(13);
 		room[2][2].setName("Front yard");
 		room[2][2].setDescription("Despite the resident possibly being a murderer, the suspect sure does have a nice property.");
 		room[2][2].setItems("petunia flower");
 		room[2][2].setItems("garden shovel");
 		room[2][2].setItems("a pair of fancy dancy gardening gloves");
+		room[2][2].setExits(exits);
 
+		exits[0] = "a";
+		exits[1] = "s";
+		exits[2] = "";
+		exits[3] = "";
 		room[2][3].setNumber(14);
 		room[2][3].setName("Neighbor's front yard");
 		room[2][3].setDescription("The neighbor's front yard is very ugly.");
 		room[2][3].setItems("pile of dirt");
 		room[2][3].setItems("bug");
+		room[2][3].setExits(exits);
 
+		exits[0] = "";
+		exits[1] = "d";
+		exits[2] = "s";
+		exits[3] = "";
 		room[3][2].setNumber(15);
 		room[3][2].setName("Back Yard");
 		room[3][2].setDescription("This is the back yard. He's even got a pool. There is a shed in the corner. A trail of blood leads to the neighbor's back yard.");
 		room[3][2].setItems("pool noodle");
 		room[3][2].setItems("bottle of water");
+		room[3][2].setExits(exits);
 
 		exits[0] = "w";
 		exits[1] = "a";
