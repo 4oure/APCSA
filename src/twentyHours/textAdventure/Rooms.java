@@ -63,16 +63,18 @@ class Rooms {
 		room[4][0].setItems("toilet paper");
 		room[4][0].setItems("towel");
 		room[4][0].setItems("soap");
+		room[4][0].setExits(exits);
 
 		// start of my new rooms
 
-		exits[0] = "w"; exits[1] = "s"; exits[2] = ""; exits[3] = "";
+		exits[0] = "w"; exits[1] = "s"; exits[2] = "d"; exits[3] = "";
 		room[5][0].setNumber(5);
 		room[5][0].setName("Living Room");
 		room[5][0].setDescription("You are in the living room. The carpet has a blood-stained spot. I wonder whose blood that is..");
 		room[5][0].setItems("tv remote");
 		room[5][0].setItems("coaster");
 		room[5][0].setItems("napkins");
+		room[5][0].setExits(exits);
 
 		room[6][0].setNumber(6);
 		room[6][0].setName("Bedroom Hallway");
@@ -129,7 +131,39 @@ class Rooms {
 		room[2][3].setNumber(14);
 		room[2][3].setName("Neighbor's front yard");
 		room[2][3].setDescription("The neighbor's front yard is very ugly.");
-		room[2][3].setItems();
+		room[2][3].setItems("pile of dirt");
+		room[2][3].setItems("bug");
+		room[3][3].setItems("greenhouse key");
+
+		room[3][2].setNumber(15);
+		room[3][2].setName("Back Yard");
+		room[3][2].setDescription("This is the back yard. He's even got a pool. There is a shed in the corner. A trail of blood leads to the neighbor's back yard.");
+		room[3][2].setItems("pool noodle");
+		room[3][2].setItems("bottle of water");
+
+		exits[0] = "w"; exits[1]= "a"; exits[2] = ""; exits[3] = "";
+		room[3][3].setNumber(16);
+		room[3][3].setName("Neighbor's back yard");
+		room[3][3].setDescription("Here is the neighbor's back yard. Surrounded by a white pickett fence, there appears to be a greenhouse.");
+		room[3][3].setItems("pizza box");
+		room[3][3].setExits(exits);
+
+		exits[0] ="w"; exits[1]="";exits[2]="";exits[3]="";
+		room[4][3].setNumber(17);
+		room[4][3].setName("Shed in the back yard");
+		room[4][3].setDescription("An old shed built out of local timber. Perhaps he'd hide a body in here if the homeowner did it.");
+		room[4][3].setItems("spider");
+		room[4][3].setItems("empty beer can");
+		room[4][3].setExits(exits);
+
+
+
+
+
+
+		// reminder to lock the greenhouse
+
+
 
 
 

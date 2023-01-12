@@ -109,6 +109,7 @@ public class Main {
 						if (input.substring(input.indexOf(' ')).length() > 1) {
 							String item = input.substring(input.indexOf(' ') + 1);
 							Inventory.dropItem(inventory, item, room, row, col, score);
+							score -= 5;
 						}
 					} else if (input.equals("score")) {
 						System.out.println("Score: " + score + "/500");
