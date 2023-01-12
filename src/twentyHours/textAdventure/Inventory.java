@@ -9,7 +9,7 @@ class Inventory {
 		// Check if item is a valid room item
 		boolean validRoomItem = false;
 		for (String roomItems : room[row][col].items) {
-			if (roomItems.equalsIgnoreCase(item)) { // added ignorecase
+			if (roomItems.equalsIgnoreCase(item) && !roomItems.equalsIgnoreCase("car")) { // added ignorecase
 				validRoomItem = true;
 				break;
 			}
@@ -50,15 +50,18 @@ class Inventory {
 		}
 	}
 
-	public static void dropItem(ArrayList<String> inventory, String item, Room[][] room, int row, int col) {
+	public static int dropItem(ArrayList<String> inventory, String item, Room[][] room, int row, int col, int score) {
 
 		if (inventory.contains(item)) {
 			System.out.println("You drop the " + item);
 			inventory.remove(item);
 			room[row][col].setItems(item);
+			score -= 5;
+			return score;
+
 		} else {
 			System.out.println("You don't have the " + item);
-		}
+		}return 0;
 
 	}
 }

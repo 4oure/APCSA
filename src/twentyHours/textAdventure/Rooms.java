@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 class Rooms {
 
-	static String exits[] = new String[4];
+	static String[] exits = new String[4];
 
 	public static void build(Room[][] room, final int HEIGHT, final int WIDTH) {
 
@@ -110,9 +110,26 @@ class Rooms {
 		room[2][1].setNumber(11);
 		room[2][1].setName("Garage");
 		room[2][1].setDescription("Surely if the murderer fled, he had to have taken a car.");
+		room[2][1].setItems("wrench");
+		room[2][1].setItems("tire pressure gauge");
+		room[2][1].setItems("car keys");
 
+		room[7][2].setNumber(12);
+		room[7][2].setName("Bedroom walk-in closet");
+		room[7][2].setDescription("The closet holds what a man holds closest to his heart.");
+		room[7][2].setItems("fancy socks");
 
+		room[2][2].setNumber(13);
+		room[2][2].setName("Front yard");
+		room[2][2].setDescription("Despite the resident possibly being a murderer, the suspect sure does have a nice property.");
+		room[2][2].setItems("petunia flower");
+		room[2][2].setItems("garden shovel");
+		room[2][2].setItems("a pair of fancy dancy gardening gloves");
 
+		room[2][3].setNumber(14);
+		room[2][3].setName("Neighbor's front yard");
+		room[2][3].setDescription("The neighbor's front yard is very ugly.");
+		room[2][3].setItems();
 
 
 

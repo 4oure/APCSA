@@ -20,6 +20,7 @@ public class Input {
 		System.out.println(" 'get or take ' + the item to get something");
 		System.out.println(" 'i' to view your inventory");
 		System.out.println(" 'score' to view your score");
+		System.out.println("drop + the item you want to drop to drop the item");
 		System.out.println(" 'restart' to restart the game");
 		System.out.println(" 'quit' to quit the game");
 	}

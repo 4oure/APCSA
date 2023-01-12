@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="WedJan11">
+    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="FIXED W++ S++">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Inventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Rooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Rooms.java" afterDir="false" />
     </list>
@@ -173,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662996494777</updated>
-    </task>
-    <task id="LOCAL-00032" summary="monoct17">
-      <created>1666018866912</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1666018866912</updated>
     </task>
     <task id="LOCAL-00033" summary="monoct17">
       <created>1666019433403</created>
@@ -517,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673447211599</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="FIXED W++ S++">
+      <created>1673448039852</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1673448039852</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -560,7 +562,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="monoct17" />
     <MESSAGE value="thursoct20" />
     <MESSAGE value="frioct21" />
     <MESSAGE value="tueoct25" />
@@ -585,7 +586,8 @@
     <MESSAGE value="FriJan6" />
     <MESSAGE value="TuesJan10" />
     <MESSAGE value="WedJan11" />
-    <option name="LAST_COMMIT_MESSAGE" value="WedJan11" />
+    <MESSAGE value="FIXED W++ S++" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIXED W++ S++" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -108,7 +108,7 @@ public class Main {
 					} else if (input.length() > 5 && input.substring(0, 5).equals("drop ")) {
 						if (input.substring(input.indexOf(' ')).length() > 1) {
 							String item = input.substring(input.indexOf(' ') + 1);
-							Inventory.dropItem(inventory, item, room, row, col);
+							Inventory.dropItem(inventory, item, room, row, col, score);
 						}
 					} else if (input.equals("score")) {
 						System.out.println("Score: " + score + "/500");
