@@ -267,6 +267,7 @@ class Rooms {
 	}
 }
 
+
 class Room {
 
 	private int number;
@@ -313,8 +314,7 @@ class Room {
 	}
 
 	public void setExits(String[] exit) {
-		for (int i = 0; i < exit.length; i++)
-			this.exits.add(exit[i]);
+		for (String s : exit) this.exits.add(s);
 	}
 
 	public void setLocked(boolean locked) {
@@ -334,7 +334,6 @@ class item {
 
 	private String name;
 	private String description;
-	private boolean hidden = false;
 
 	public void setName(String name) {
 		this.name = name;
@@ -351,10 +350,5 @@ class item {
 	public String getDescription() {
 		return this.description;
 	}
-
-	public void setHidden(boolean hidden) {
-		this.hidden = hidden;
-	}
-
 }
 
