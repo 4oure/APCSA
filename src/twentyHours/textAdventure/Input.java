@@ -14,7 +14,7 @@ public class Input {
 	}
 
 	public static void helpCMDS() {
-		System.out.println("These are the command you can type at the > prompt:");
+		System.out.println("These are the commands you can type at the > prompt:");
 		System.out.println(" 'w'/'a'/'s'/'d' to move");
 		System.out.println(" 'look' for a description of the room you're in");
 		System.out.println(" 'get' or 'take' + the item to get something");

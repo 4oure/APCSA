@@ -1,6 +1,7 @@
 package twentyHours.textAdventure;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 // https://docs.google.com/document/d/1ijHOY4zzAx5DeaaYOppCCMk5OaVkJTAnBKgjdxN-XPk/edit?usp=sharing
 
@@ -248,7 +249,7 @@ class Rooms {
 		exits[3] = "";
 		room[3][5].setNumber(19);
 		room[3][5].setName("Neighbor's greenhouse storage closet");
-		room[3][5].setDescription("This is the creepy greenhouse storage closet. OUT POPS A SCARY NPC MAN BOOOOO");
+		room[3][5].setDescription("This is the creepy greenhouse storage closet.");
 		room[3][5].setItems("a lovely petunia");
 		room[3][5].setItems("severed head");
 
@@ -265,10 +266,28 @@ class Rooms {
 		System.out.println();
 
 		if (!room[x][y].getItems().isEmpty()) {
+			System.out.println(room[x][y].getName());
 			System.out.println(room[x][y].getDescription() + " - at Position: " + x + "," + y);
 			System.out.println("You see: " + room[x][y].getItems());
-		} else
+
+		} else {
+			System.out.println(room[x][y].getName());
+			System.out.println(room[x][y].getDescription() + " - at Position: " + x + "," + y);
 			System.out.println("You see nothingness: " + " - in Position: " + x + "," + y);
+			System.out.println(Arrays.toString(exits));
+		}
+		if(Arrays.toString(exits).contains("a")){
+			System.out.print("The door to the left is open");
+		}
+		if(Arrays.toString(exits).contains("w")){
+			System.out.print("The door at the top of the room is open");
+		}
+		if(Arrays.toString(exits).contains("d")){
+			System.out.print("The door to the right is open");
+		}
+		if(Arrays.toString(exits).contains("s")){
+			System.out.print("The door at the bottom of the room is open");
+		}
 	}
 
 	// Remove item from room when added to inventory

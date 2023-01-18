@@ -23,7 +23,6 @@ public class Main {
 
 		// Load inventory
 		ArrayList<String> inventory = new ArrayList<>();
-		ArrayList<String> listOfNPCs = new
 
 		// Title Screen
 		System.out.println("+-----------------------------------+");
@@ -91,14 +90,18 @@ public class Main {
 					if (input.length() > 4 && ((input.substring(0, 4).equals("get ") || input.substring(0, 5).equals("take ")))) {
 						if (input.substring(input.indexOf(' ')).length() > 1) {
 							String item = input.substring(input.indexOf(' ') + 1);
-							switch (item) {
-								case "reign energy drink" -> System.out.println("EUGH. DAN MUST HAVE BEEN HERE.");
-								case "note" ->
+							if (item.equalsIgnoreCase("car")) {
+								System.out.println("You can not store a car in your inventory.");
+							} else {
+								switch (item) {
+									case "reign energy drink":
+										System.out.println("EUGH. DAN MUST HAVE BEEN HERE.");
+									case "note":
 										System.out.println("The note reads: You will never find me. I am not in this house.");
-								case "car" -> System.out.println("You can not store a car in your inventory.");
+								}
+								// Sounds.playItemPickup();
+								score = Inventory.checkItem(row, col, item, inventory, room, score);
 							}
-							// Sounds.playItemPickup();
-							score = Inventory.checkItem(row, col, item, inventory, room, score);
 						}
 					}
 
@@ -119,10 +122,6 @@ public class Main {
 						Main.main(args);
 					} else if (input.equals("help")) {
 						Input.helpCMDS();
-					}
-
-					else if(input.equals("attack")){
-						//TODO: add attack
 					}
 
 					// Quit commands
