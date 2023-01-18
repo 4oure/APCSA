@@ -23,6 +23,7 @@ public class Main {
 
 		// Load inventory
 		ArrayList<String> inventory = new ArrayList<>();
+		ArrayList<String> listOfNPCs = new
 
 		// Title Screen
 		System.out.println("+-----------------------------------+");
@@ -118,6 +119,10 @@ public class Main {
 						Main.main(args);
 					} else if (input.equals("help")) {
 						Input.helpCMDS();
+					}
+
+					else if(input.equals("attack")){
+						//TODO: add attack
 					}
 
 					// Quit commands
