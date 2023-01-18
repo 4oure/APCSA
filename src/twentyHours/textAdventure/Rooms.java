@@ -242,6 +242,17 @@ class Rooms {
 		room[3][4].setItems("blood-soaked hatchet");
 		room[3][4].setExits(exits);
 
+		exits[0] = "a";
+		exits[1] = "";
+		exits[2] = "";
+		exits[3] = "";
+		room[3][5].setNumber(19);
+		room[3][5].setName("Neighbor's greenhouse storage closet");
+		room[3][5].setDescription("This is the creepy greenhouse storage closet. OUT POPS A SCARY NPC MAN BOOOOO");
+		room[3][5].setItems("a lovely petunia");
+		room[3][5].setItems("severed head");
+
+
 
 
 		// reminder to lock the greenhouse

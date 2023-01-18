@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="jan12stuff">
-      <change afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/NPC.java" afterDir="false" />
+    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="NPC Class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Rooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Rooms.java" afterDir="false" />
     </list>
@@ -173,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662996494777</updated>
-    </task>
-    <task id="LOCAL-00038" summary="tueoct25">
-      <created>1666700285852</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1666700285853</updated>
     </task>
     <task id="LOCAL-00039" summary="tueoct25">
       <created>1666701484351</created>
@@ -517,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673539810673</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="NPC Class">
+      <created>1673975470434</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1673975470435</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -560,7 +559,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="afterIAddedPayroll" />
     <MESSAGE value="fixedPrivate" />
     <MESSAGE value="addedListThingForInsurance" />
     <MESSAGE value="reformat" />
@@ -585,7 +583,8 @@
     <MESSAGE value="all rooms except 19 before messing with exits for most" />
     <MESSAGE value="rooms exits finished i think" />
     <MESSAGE value="jan12stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="jan12stuff" />
+    <MESSAGE value="NPC Class" />
+    <option name="LAST_COMMIT_MESSAGE" value="NPC Class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
