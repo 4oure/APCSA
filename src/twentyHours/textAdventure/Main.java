@@ -96,8 +96,10 @@ public class Main {
 								switch (item) {
 									case "reign energy drink":
 										System.out.println("EUGH. DAN MUST HAVE BEEN HERE.");
+										break;
 									case "note":
 										System.out.println("The note reads: You will never find me. I am not in this house.");
+										break;
 								}
 								// Sounds.playItemPickup();
 								score = Inventory.checkItem(row, col, item, inventory, room, score);
@@ -112,11 +114,10 @@ public class Main {
 					} else if (input.length() > 5 && input.substring(0, 5).equals("drop ")) {
 						if (input.substring(input.indexOf(' ')).length() > 1) {
 							String item = input.substring(input.indexOf(' ') + 1);
-							Inventory.dropItem(inventory, item, room, row, col, score);
-							score -= 5;
+							score = Inventory.dropItem(inventory, item, room, row, col, score);
 						}
 					} else if (input.equals("score")) {
-						System.out.println("Score: " + score + "/500");
+						System.out.println("Score: " + score + "/240");
 					} else if (input.equals("restart")) {
 						System.out.println();
 						Main.main(args);
@@ -134,6 +135,9 @@ public class Main {
 						System.out.println("You can't do that.");
 					}
 					break;
+			}
+			if(score == 240){
+				System.out.println("You win!");
 			}
 		}
 		System.exit(0);

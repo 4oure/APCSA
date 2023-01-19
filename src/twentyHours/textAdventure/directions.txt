@@ -5,10 +5,12 @@ Using the provided starter code complete the following programming tasks.
 Programming Tasks	                                    Points
 Required
 Modify an existing class (new methods and attributes)	      10
+  // FINALLY FIXED THE POINT THING. the drop method in Inventory returns an int now
 Add a new class (that actually enhances the game)	          20
 Create at least 15 rooms with items	           20
+  // done
 Make the code more efficient or streamlined 20
-  // fixed uppercase/lowercase error
+  // fixed uppercase/lowercase error, used .equalsIgnoreCase();
   // fixed unnecessary if-else to a switch
   // moved all help commands to a class so it didnt print everything twice instead just call method
 
@@ -21,6 +23,7 @@ Make the game more interactive better feedback, sounds, etc.  10
 // changed so that help cmds print off the bat so that u dont have to guess
 // made fun of dan with energy drink reference
 // added notes so the gamer/text-adventurist can get clues
+
 
 Total	                                                      100
 Optional
