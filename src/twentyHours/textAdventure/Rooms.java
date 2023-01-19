@@ -49,7 +49,7 @@ class Rooms {
 
 		exits[0] = "w";
 		exits[1] = "s";
-		exits[2] = "";
+		exits[2] = "d";
 		exits[3] = "";
 		room[2][0].setNumber(2);
 		room[2][0].setName("Foyer");
@@ -97,7 +97,7 @@ class Rooms {
 		room[5][0].setExits(exits);
 
 		exits[0] = "d";
-		exits[1] = "";
+		exits[1] = "w";
 		exits[2] = "";
 		exits[3] = "";
 		room[6][0].setNumber(6);
@@ -199,7 +199,7 @@ class Rooms {
 		room[2][3].setItems("bug");
 		room[2][3].setExits(exits);
 
-		exits[0] = "";
+		exits[0] = "w";
 		exits[1] = "d";
 		exits[2] = "s";
 		exits[3] = "";
@@ -212,7 +212,7 @@ class Rooms {
 
 		exits[0] = "w";
 		exits[1] = "a";
-		exits[2] = "";
+		exits[2] = "d";
 		exits[3] = "";
 		room[3][3].setNumber(16);
 		room[3][3].setName("Neighbor's back yard");

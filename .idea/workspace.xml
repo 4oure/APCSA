@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="before deletion NPC Class">
+    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="added exit printing but it dont work :(">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Inventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/NPC.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Rooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Rooms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/directions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/directions.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662996494777</updated>
-    </task>
-    <task id="LOCAL-00041" summary="wedoct26">
-      <created>1666789688987</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1666789688987</updated>
     </task>
     <task id="LOCAL-00042" summary="wedoct26">
       <created>1666790496688</created>
@@ -518,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674065638030</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="added exit printing but it dont work :(">
+      <created>1674067495197</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1674067495197</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -561,7 +562,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="reformat" />
     <MESSAGE value="tuesoct8" />
     <MESSAGE value="tuesNov9" />
     <MESSAGE value="tuesNov8" />
@@ -586,7 +586,8 @@
     <MESSAGE value="NPC Class" />
     <MESSAGE value="rooms19" />
     <MESSAGE value="before deletion NPC Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="before deletion NPC Class" />
+    <MESSAGE value="added exit printing but it dont work :(" />
+    <option name="LAST_COMMIT_MESSAGE" value="added exit printing but it dont work :(" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
