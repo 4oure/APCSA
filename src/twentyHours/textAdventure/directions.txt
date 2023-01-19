@@ -16,8 +16,8 @@ Make the code more efficient or streamlined 20
 
 
 
-Create a way to “win” the game
-                 20
+Create a way to “win” the game                                20
+// i think i did it but i havent tested it yet
 Make the game more interactive better feedback, sounds, etc.  10
 // changed 'NWSE' to 'WASD'.. nwse
 // changed so that help cmds print off the bat so that u dont have to guess
