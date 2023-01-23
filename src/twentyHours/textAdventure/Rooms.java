@@ -15,9 +15,13 @@ class Rooms {
 		// Initialize rooms
 		for (int i = 0; i < HEIGHT; i++) {
 			for (int j = 0; j < WIDTH; j++) {
-				room[i][j] = new Room(i, "", "", null);
+				room[i][j] = new Room(i, "", "", null, null);
 			}
 		}
+
+		NPC John = new NPC("John", true, true);
+
+		NPC Dan = new NPC("Dan", true, true);
 		//w = row--
 		//s = row++
 		//a = col--
@@ -175,7 +179,12 @@ class Rooms {
 		room[7][2].setName("Bedroom walk-in closet");
 		room[7][2].setDescription("The closet holds what a man holds closest to his heart.");
 		room[7][2].setItems("fancy socks");
+		room[7][2].setNPC(John);
+		while(John.isAlive()){
+			room[7][2].setExits((ArrayList<String>) null);
+		}
 		room[7][2].setExits(exits);
+
 
 		exits[0] = "a";
 		exits[1] = "d";
@@ -255,8 +264,6 @@ class Rooms {
 		room[3][5].setItems("severed head");
 
 
-		// reminder to lock the greenhouse
-
 
 	}
 
@@ -305,12 +312,13 @@ class Room {
 	private boolean locked = false;
 	public ArrayList<String> items = new ArrayList<>();
 	public ArrayList<String> exits = new ArrayList<>();
+	public ArrayList<NPC> NPClist = new ArrayList<>();
 
 	public Room(int number, String name, String description,
-	            ArrayList<String> items) {
+	            ArrayList<String> items, ArrayList<NPC> npcList) {
 	}
 
-	public ArrayList<NPC> NPClist = new ArrayList<>();
+
 
 	public void setNumber(int number) {
 		this.number = number;
@@ -340,12 +348,36 @@ class Room {
 		return this.locked;
 	}
 
+	public void setItems(ArrayList<String> items) {
+		this.items = items;
+	}
+
+	public ArrayList<String> getExits() {
+		return exits;
+	}
+
+	public void setExits(ArrayList<String> exits) {
+		this.exits = exits;
+	}
+
+	public ArrayList<NPC> getNPClist() {
+		return NPClist;
+	}
+
+	public void setNPClist(ArrayList<NPC> NPClist) {
+		this.NPClist = NPClist;
+	}
+
+	public boolean hasNPCs(){
+		return !getNPClist().isEmpty();
+	}
+
 	public void setItems(String item) {
 		this.items.add(item);
 	}
 
 	public void setNPC(NPC npc){
-		NPClist.add(npc);
+		this.NPClist.add(npc);
 	}
 
 	public void setExits(String[] exit) {
@@ -365,7 +397,7 @@ class Room {
 	}
 }
 
-class item {
+class item{
 
 	private String name;
 	private String description;

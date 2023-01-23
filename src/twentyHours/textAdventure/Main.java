@@ -52,7 +52,12 @@ public class Main {
 						row--;
 						Rooms.print(room, row, col);
 					} else {
-						System.out.println("You can't go that way.");
+						if(room[row][col].hasNPCs()){
+							System.out.println("You have to defeat the NPC first.");
+						}else {
+							System.out.println("You can't go that way.");
+
+						}
 					}
 					break;
 				case "s":
@@ -60,7 +65,12 @@ public class Main {
 						row++;
 						Rooms.print(room, row, col);
 					} else {
+						if(room[row][col].hasNPCs()){
+						System.out.println("You have to defeat the NPC first.");
+					}else {
 						System.out.println("You can't go that way.");
+
+					}
 					}
 					break;
 				case "d":
@@ -68,6 +78,12 @@ public class Main {
 						col++;
 						Rooms.print(room, row, col);
 					} else {
+						if(room[row][col].hasNPCs()){
+							System.out.println("You have to defeat the NPC first.");
+						}else {
+							System.out.println("You can't go that way.");
+
+						}
 						System.out.println("You can't go that way.");
 					}
 					break;
@@ -76,6 +92,12 @@ public class Main {
 						col--;
 						Rooms.print(room, row, col);
 					} else {
+						if(room[row][col].hasNPCs()){
+							System.out.println("You have to defeat the NPC first.");
+						}else {
+							System.out.println("You can't go that way.");
+
+						}
 						System.out.println("You can't go that way.");
 					}
 					break;
@@ -109,6 +131,7 @@ public class Main {
 					}
 
 					// Inventory commands
+
 					else if (input.equals("i") || input.equals("inv")
 							|| input.equals("inventory")) {
 						Inventory.print(inventory);
@@ -133,7 +156,7 @@ public class Main {
 
 						// Catch-all for invalid input
 					} else {
-						System.out.println("You can't do that.");
+						System.out.println("Invalid command.");
 					}
 					break;
 			}
