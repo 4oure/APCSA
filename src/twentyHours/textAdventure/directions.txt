@@ -7,7 +7,7 @@ Required
 Modify an existing class (new methods and attributes)	      10
   // FINALLY FIXED THE POINT THING. the drop method in Inventory returns an int now
 Add a new class (that actually enhances the game)	          20
-Create at least 15 rooms with items	           20
+Create at least 15 rooms with items	                          20
   // done
 Make the code more efficient or streamlined 20
   // fixed uppercase/lowercase error, used .equalsIgnoreCase();

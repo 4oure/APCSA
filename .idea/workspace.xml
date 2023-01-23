@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="added exit printing but it dont work :(">
+    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="idk">
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/NPC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Inventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" afterDir="false" />
@@ -175,27 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662996494777</updated>
-    </task>
-    <task id="LOCAL-00042" summary="wedoct26">
-      <created>1666790496688</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1666790496688</updated>
-    </task>
-    <task id="LOCAL-00043" summary="wedoct26">
-      <created>1666790957449</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1666790957449</updated>
-    </task>
-    <task id="LOCAL-00044" summary="wedoct26">
-      <created>1666791036083</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1666791036083</updated>
     </task>
     <task id="LOCAL-00045" summary="wedoct26">
       <created>1666791138610</created>
@@ -519,7 +500,28 @@
       <option name="project" value="LOCAL" />
       <updated>1674067495197</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="FIXED DROPPING">
+      <created>1674155867883</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1674155867883</updated>
+    </task>
+    <task id="LOCAL-00092" summary="FIXED DROPPING">
+      <created>1674155887686</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1674155887686</updated>
+    </task>
+    <task id="LOCAL-00093" summary="idk">
+      <created>1674156137720</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1674156137720</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -562,8 +564,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="tuesoct8" />
-    <MESSAGE value="tuesNov9" />
     <MESSAGE value="tuesNov8" />
     <MESSAGE value="WedNov30" />
     <MESSAGE value="ThursDec1" />
@@ -587,7 +587,9 @@
     <MESSAGE value="rooms19" />
     <MESSAGE value="before deletion NPC Class" />
     <MESSAGE value="added exit printing but it dont work :(" />
-    <option name="LAST_COMMIT_MESSAGE" value="added exit printing but it dont work :(" />
+    <MESSAGE value="FIXED DROPPING" />
+    <MESSAGE value="idk" />
+    <option name="LAST_COMMIT_MESSAGE" value="idk" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,5 +1,6 @@
 package twentyHours.textAdventure;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -254,8 +255,6 @@ class Rooms {
 		room[3][5].setItems("severed head");
 
 
-
-
 		// reminder to lock the greenhouse
 
 
@@ -276,22 +275,22 @@ class Rooms {
 			System.out.println("You see nothingness: " + " - in Position: " + x + "," + y);
 			System.out.println(Arrays.toString(exits));
 		}
-		if(Arrays.toString(exits).contains("a")){
+		if (Arrays.toString(exits).contains("a")) {
 			System.out.print("The door to the left is open");
 		}
-		if(Arrays.toString(exits).contains("w")){
+		if (Arrays.toString(exits).contains("w")) {
 			System.out.print("The door at the top of the room is open");
 		}
-		if(Arrays.toString(exits).contains("d")){
+		if (Arrays.toString(exits).contains("d")) {
 			System.out.print("The door to the right is open");
 		}
-		if(Arrays.toString(exits).contains("s")){
+		if (Arrays.toString(exits).contains("s")) {
 			System.out.print("The door at the bottom of the room is open");
 		}
 	}
 
 	// Remove item from room when added to inventory
-	public static void removeItem(Room[] [] room, int x, int y, String item) {
+	public static void removeItem(Room[][] room, int x, int y, String item) {
 
 		room[x][y].deleteItem(item);
 	}
@@ -310,6 +309,8 @@ class Room {
 	public Room(int number, String name, String description,
 	            ArrayList<String> items) {
 	}
+
+	public ArrayList<NPC> NPClist = new ArrayList<>();
 
 	public void setNumber(int number) {
 		this.number = number;
@@ -341,6 +342,10 @@ class Room {
 
 	public void setItems(String item) {
 		this.items.add(item);
+	}
+
+	public void setNPC(NPC npc){
+		NPClist.add(npc);
 	}
 
 	public void setExits(String[] exit) {

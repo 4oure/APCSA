@@ -43,10 +43,10 @@ public class Main {
 		while (playing) {
 
 			// Get user input
-			String input = Input.getInput();
+			String input = Input.getInput().toLowerCase();
 
 			// Movement commands
-			switch (input.toLowerCase()) {
+			switch (input) {
 				case "w":
 					if (room[row][col].exits.contains("w")) {
 						row--;
@@ -87,8 +87,9 @@ public class Main {
 
 				// Get commands
 				default:
-					if (input.length() > 4 && ((input.substring(0, 4).equals("get ") || input.substring(0, 5).equals("take ")))) {
-						if (input.substring(input.indexOf(' ')).length() > 1) {
+					boolean somethingAfterCmd = input.substring(input.indexOf(' ')).length() > 1;
+					if (input.substring(0, 4).equalsIgnoreCase("get ") || input.substring(0, 5).equalsIgnoreCase("take ")) {
+						if (somethingAfterCmd) {
 							String item = input.substring(input.indexOf(' ') + 1);
 							if (item.equalsIgnoreCase("car")) {
 								System.out.println("You can not store a car in your inventory.");
@@ -112,7 +113,7 @@ public class Main {
 							|| input.equals("inventory")) {
 						Inventory.print(inventory);
 					} else if (input.length() > 5 && input.substring(0, 5).equals("drop ")) {
-						if (input.substring(input.indexOf(' ')).length() > 1) {
+						if (somethingAfterCmd) {
 							String item = input.substring(input.indexOf(' ') + 1);
 							score = Inventory.dropItem(inventory, item, room, row, col, score);
 						}
@@ -136,7 +137,7 @@ public class Main {
 					}
 					break;
 			}
-			if(score == 240){
+			if (score == 240) {
 				System.out.println("You win!");
 			}
 		}

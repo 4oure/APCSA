@@ -57,7 +57,7 @@ class Inventory {
 			System.out.println("You drop the " + item);
 			inventory.remove(item);
 			room[row][col].setItems(item);
-		return score -= 5;
+			return score -= 5;
 
 		} else {
 			System.out.println("You don't have the " + item);

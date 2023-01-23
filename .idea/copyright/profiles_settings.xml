@@ -1,0 +1,13 @@
+<component name="CopyrightManager">
+  <settings>
+    <LanguageOptions name="SVG">
+      <option name="fileTypeOverride" value="3" />
+      <option name="addBlankBefore" value="true" />
+      <option name="block" value="false" />
+      <option name="separateBefore" value="true" />
+      <option name="separateAfter" value="true" />
+      <option name="box" value="true" />
+      <option name="filler" value="x" />
+    </LanguageOptions>
+  </settings>
+</component>
