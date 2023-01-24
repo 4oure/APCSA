@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class Main {
 
-
 	public static void main(String[] args) {
 
 		// Build rooms
@@ -52,9 +51,9 @@ public class Main {
 						row--;
 						Rooms.print(room, row, col);
 					} else {
-						if(room[row][col].hasNPCs()){
+						if (room[row][col].hasNPCs()) {
 							System.out.println("You have to defeat the NPC first.");
-						}else {
+						} else {
 							System.out.println("You can't go that way.");
 
 						}
@@ -65,12 +64,12 @@ public class Main {
 						row++;
 						Rooms.print(room, row, col);
 					} else {
-						if(room[row][col].hasNPCs()){
-						System.out.println("You have to defeat the NPC first.");
-					}else {
-						System.out.println("You can't go that way.");
+						if (room[row][col].hasNPCs()) {
+							System.out.println("You have to defeat the NPC first.");
+						} else {
+							System.out.println("You can't go that way.");
 
-					}
+						}
 					}
 					break;
 				case "d":
@@ -78,13 +77,12 @@ public class Main {
 						col++;
 						Rooms.print(room, row, col);
 					} else {
-						if(room[row][col].hasNPCs()){
+						if (room[row][col].hasNPCs()) {
 							System.out.println("You have to defeat the NPC first.");
-						}else {
+						} else {
 							System.out.println("You can't go that way.");
 
 						}
-						System.out.println("You can't go that way.");
 					}
 					break;
 				case "a":
@@ -92,9 +90,9 @@ public class Main {
 						col--;
 						Rooms.print(room, row, col);
 					} else {
-						if(room[row][col].hasNPCs()){
+						if (room[row][col].hasNPCs()) {
 							System.out.println("You have to defeat the NPC first.");
-						}else {
+						} else {
 							System.out.println("You can't go that way.");
 
 						}
@@ -102,15 +100,15 @@ public class Main {
 					}
 					break;
 
+
 				// Look commands
 				case "look":
 					Rooms.print(room, row, col);
 					break;
-
-				// Get commands
 				default:
-					boolean somethingAfterCmd = input.substring(input.indexOf(' ')).length() > 1;
+					// Get commands
 					if (input.substring(0, 4).equalsIgnoreCase("get ") || input.substring(0, 5).equalsIgnoreCase("take ")) {
+						boolean somethingAfterCmd = input.substring(input.indexOf(" ")).length() > 1;
 						if (somethingAfterCmd) {
 							String item = input.substring(input.indexOf(' ') + 1);
 							if (item.equalsIgnoreCase("car")) {
@@ -123,19 +121,24 @@ public class Main {
 									case "note":
 										System.out.println("The note reads: You will never find me. I am not in this house.");
 										break;
+
 								}
 								// Sounds.playItemPickup();
+
 								score = Inventory.checkItem(row, col, item, inventory, room, score);
+
 							}
 						}
 					}
+
 
 					// Inventory commands
 
 					else if (input.equals("i") || input.equals("inv")
 							|| input.equals("inventory")) {
 						Inventory.print(inventory);
-					} else if (input.length() > 5 && input.substring(0, 5).equals("drop ")) {
+					} else if (input.length() > 5 && input.startsWith("drop ")) {
+						boolean somethingAfterCmd = input.substring(input.indexOf(" ")).length() > 1;
 						if (somethingAfterCmd) {
 							String item = input.substring(input.indexOf(' ') + 1);
 							score = Inventory.dropItem(inventory, item, room, row, col, score);
@@ -147,7 +150,7 @@ public class Main {
 						Main.main(args);
 					} else if (input.equals("help")) {
 						Input.helpCMDS();
-					} else if(input.equalsIgnoreCase("attack") && room[row][col].hasNPCs()){
+					} else if (input.equalsIgnoreCase("attack") && room[row][col].hasNPCs()) {
 						//NPC.attack(room[row][col].NPClist.get(0));
 					}
 
@@ -160,13 +163,13 @@ public class Main {
 					} else {
 						System.out.println("Invalid command.");
 					}
-					break;
 			}
-			if (score == 240) {
-				System.out.println("You win!");
+
+					if (score == 240) {
+						System.out.println("You win!");
+					}
 			}
+			System.exit(0);
 		}
-		System.exit(0);
 	}
-}
 
