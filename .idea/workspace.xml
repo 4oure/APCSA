@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="i broke it">
+    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="i think i fixed it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/NPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/directions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/directions.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +81,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors"
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -173,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662996494777</updated>
-    </task>
-    <task id="LOCAL-00048" summary="thursoct27">
-      <created>1666881636088</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1666881636088</updated>
     </task>
     <task id="LOCAL-00049" summary="thursoct27">
       <created>1666882549185</created>
@@ -517,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674570347429</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="i think i fixed it">
+      <created>1674571940124</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1674571940124</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -571,7 +572,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="FridayDec5" />
     <MESSAGE value="TuesDec6" />
     <MESSAGE value="WedDec7" />
     <MESSAGE value="FriDec9" />
@@ -596,7 +596,8 @@
     <MESSAGE value="barebones NPC class" />
     <MESSAGE value="moreNPCClass stuff" />
     <MESSAGE value="i broke it" />
-    <option name="LAST_COMMIT_MESSAGE" value="i broke it" />
+    <MESSAGE value="i think i fixed it" />
+    <option name="LAST_COMMIT_MESSAGE" value="i think i fixed it" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

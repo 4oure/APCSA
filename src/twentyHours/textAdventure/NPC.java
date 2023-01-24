@@ -2,7 +2,7 @@ package twentyHours.textAdventure;
 
 public class NPC {
 	private String name = "";
-	private boolean isMean = false;
+	private boolean isMean;
 	private boolean isAlive;
 
 	public boolean isAlive() {
@@ -28,7 +28,7 @@ public class NPC {
 	public void setMean(boolean mean) {
 		isMean = mean;
 	}
-
+// constructor
 	public NPC(String name, boolean isMean, boolean isAlive) {
 		this.name = name;
 		this.isMean = isMean;
@@ -37,7 +37,6 @@ public class NPC {
 
 	public static void attack(NPC npc){
 		npc.isAlive = false;
-
 	}
 
 
