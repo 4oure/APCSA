@@ -38,6 +38,18 @@ class Rooms {
 		room[0][0].setDescription("You are in the entryway to the old house.");
 		room[0][0].setItems("newspaper");
 		room[0][0].setItems("small box");
+		room[0][0].setNPC(Dan);
+		if (Dan.isAlive()){
+			exits[0] = "";
+			exits[1] = "";
+			exits[2] = "";
+			exits[3] = "";
+			room[0][0].setExits(exits);
+		}
+		exits[0] = "s";
+		exits[1] = "";
+		exits[2] = "";
+		exits[3] = "";
 		room[0][0].setExits(exits);
 
 		// room 2, x from room 1
@@ -180,9 +192,9 @@ class Rooms {
 		room[7][2].setDescription("The closet holds what a man holds closest to his heart.");
 		room[7][2].setItems("fancy socks");
 		room[7][2].setNPC(John);
-		while(John.isAlive()){
-			room[7][2].setExits((ArrayList<String>) null);
-		}
+//		while(John.isAlive()){
+//			room[7][2].setExits(null);
+//		}
 		room[7][2].setExits(exits);
 
 
@@ -356,9 +368,6 @@ class Room {
 		return exits;
 	}
 
-	public void setExits(ArrayList<String> exits) {
-		this.exits = exits;
-	}
 
 	public ArrayList<NPC> getNPClist() {
 		return NPClist;
@@ -381,7 +390,7 @@ class Room {
 	}
 
 	public void setExits(String[] exit) {
-		for (String s : exit) this.exits.add(s);
+		this.exits.addAll(Arrays.asList(exit));
 	}
 
 	public void setLocked(boolean locked) {

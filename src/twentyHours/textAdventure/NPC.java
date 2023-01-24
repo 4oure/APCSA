@@ -35,7 +35,7 @@ public class NPC {
 		this.isAlive = isAlive;
 	}
 
-	public void attack(NPC npc){
+	public static void attack(NPC npc){
 		npc.isAlive = false;
 
 	}

@@ -147,6 +147,8 @@ public class Main {
 						Main.main(args);
 					} else if (input.equals("help")) {
 						Input.helpCMDS();
+					} else if(input.equalsIgnoreCase("attack") && room[row][col].hasNPCs()){
+						//NPC.attack(room[row][col].NPClist.get(0));
 					}
 
 					// Quit commands

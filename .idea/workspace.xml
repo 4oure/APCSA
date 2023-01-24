@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="barebones NPC class">
+    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="moreNPCClass stuff">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/NPC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Rooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Rooms.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662996494777</updated>
-    </task>
-    <task id="LOCAL-00046" summary="wedoct26">
-      <created>1666791505972</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1666791505972</updated>
     </task>
     <task id="LOCAL-00047" summary="wedoct26">
       <created>1666825210963</created>
@@ -517,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674479983076</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="moreNPCClass stuff">
+      <created>1674482153799</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1674482153799</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -560,7 +561,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="WedNov30" />
     <MESSAGE value="ThursDec1" />
     <MESSAGE value="FridayDec5" />
     <MESSAGE value="TuesDec6" />
@@ -585,7 +585,8 @@
     <MESSAGE value="FIXED DROPPING" />
     <MESSAGE value="idk" />
     <MESSAGE value="barebones NPC class" />
-    <option name="LAST_COMMIT_MESSAGE" value="barebones NPC class" />
+    <MESSAGE value="moreNPCClass stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="moreNPCClass stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
