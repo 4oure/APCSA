@@ -13,11 +13,7 @@ class Rooms {
 	public static void build(Room[][] room, final int HEIGHT, final int WIDTH) {
 
 		// Initialize rooms
-		for (int i = 0; i < HEIGHT; i++) {
-			for (int j = 0; j < WIDTH; j++) {
-				room[i][j] = new Room(i, "", "", null, null);
-			}
-		}
+		createRoom(room, HEIGHT, WIDTH);
 
 		NPC John = new NPC("John", true, true);
 
@@ -279,10 +275,22 @@ class Rooms {
 
 	}
 
+	private static void createRoom(Room[][] room, int HEIGHT, int WIDTH) {
+		for (int i = 0; i < HEIGHT; i++) {
+			for (int j = 0; j < WIDTH; j++) {
+				room[i][j] = new Room(i, "", "", null, null);
+			}
+		}
+	}
+
 	public static void print(Room[][] room, int x, int y) {
 
 		System.out.println();
 
+		roomFunction(room, x, y);
+	}
+
+	private static void roomFunction(Room[][] room, int x, int y) {
 		if (!room[x][y].getItems().isEmpty()) {
 			System.out.println(room[x][y].getName());
 			System.out.println(room[x][y].getDescription() + " - at Position: " + x + "," + y);
@@ -294,6 +302,10 @@ class Rooms {
 			System.out.println("You see nothingness: " + " - in Position: " + x + "," + y);
 			System.out.println(Arrays.toString(exits));
 		}
+		checkForExits();
+	}
+
+	private static void checkForExits() {
 		if (Arrays.toString(exits).contains("a")) {
 			System.out.print("The door to the left is open");
 		}

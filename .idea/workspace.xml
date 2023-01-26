@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="i think i fixed it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/NPC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/directions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/directions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Rooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Rooms.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +83,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -174,13 +176,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662996494777</updated>
-    </task>
-    <task id="LOCAL-00049" summary="thursoct27">
-      <created>1666882549185</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1666882549185</updated>
     </task>
     <task id="LOCAL-00050" summary="thursoct27">
       <created>1666883187478</created>
@@ -518,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674571940124</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="i think i fixed it">
+      <created>1674577171485</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1674577171485</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -630,6 +632,9 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/APCSA$Main.ic" NAME="Main Coverage Results" MODIFIED="1674612600298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>twentyHours.textAdventure.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/APCSA$blastOff.ic" NAME="blastOff Coverage Results" MODIFIED="1667918410962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

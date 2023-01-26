@@ -8,24 +8,18 @@ class Inventory {
 	public static int checkItem(int row, int col, String item, ArrayList<String> inventory, Room[][] room, int score) {
 
 		// Check if item is a valid room item
-		boolean validRoomItem = false;
-		for (String roomItems : room[row][col].items) {
-			if (roomItems.equalsIgnoreCase(item) && !roomItems.equalsIgnoreCase("car")) { // added ignorecase
-				validRoomItem = true;
-				break;
-			}
-		}
+		boolean validRoomItem = isValidRoomItem(col, item, room[row]);
 
 		// Check if item is already in inventory
-		boolean inInventory = false;
-		for (String itemInInv : inventory) {
-			if (itemInInv.equalsIgnoreCase(item)) { // added ignore case
-				inInventory = true;
-				break;
-			}
-		}
+		boolean inInventory = isInInventory(item, inventory);
 
 		// Text output
+		score = calculateScore(row, col, item, inventory, room, score, validRoomItem, inInventory);
+
+		return score;
+	}
+
+	private static int calculateScore(int row, int col, String item, ArrayList<String> inventory, Room[][] room, int score, boolean validRoomItem, boolean inInventory) {
 		if (!inInventory && validRoomItem) {
 			//Sounds.playItemPickup();
 			System.out.println("You pick up the " + item + ".");
@@ -39,8 +33,29 @@ class Inventory {
 		} else {
 			System.out.println("I don't understand.");
 		}
-
 		return score;
+	}
+
+	private static boolean isInInventory(String item, ArrayList<String> inventory) {
+		boolean inInventory = false;
+		for (String itemInInv : inventory) {
+			if (itemInInv.equalsIgnoreCase(item)) { // added ignore case
+				inInventory = true;
+				break;
+			}
+		}
+		return inInventory;
+	}
+
+	private static boolean isValidRoomItem(int col, String item, Room[] room) {
+		boolean validRoomItem = false;
+		for (String roomItems : room[col].items) {
+			if (roomItems.equalsIgnoreCase(item) && !roomItems.equalsIgnoreCase("car")) { // added ignorecase
+				validRoomItem = true;
+				break;
+			}
+		}
+		return validRoomItem;
 	}
 
 	public static void print(ArrayList<String> inventory) {

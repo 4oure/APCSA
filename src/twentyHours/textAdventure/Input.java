@@ -5,9 +5,8 @@ import java.util.Scanner;
 public class Input {
 
 	public static String getInput() {
-
 		System.out.print("\r> ");
-		Scanner scanIn = new Scanner(System.in);
+		Scanner scanIn = new Scanner(System.in,"UTF-8");
 		String input = scanIn.nextLine();
 
 		return input.toLowerCase();

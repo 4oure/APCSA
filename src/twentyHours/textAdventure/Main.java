@@ -24,9 +24,7 @@ public class Main {
 		ArrayList<String> inventory = new ArrayList<>();
 
 		// Title Screen
-		System.out.println("+-----------------------------------+");
-		System.out.println("| Horror Text Adventure: Greenhouse |");
-		System.out.println("+-----------------------------------+");
+		titlePrint();
 
 		// help commands output
 		Input.helpCMDS();
@@ -96,11 +94,8 @@ public class Main {
 							System.out.println("You can't go that way.");
 
 						}
-						System.out.println("You can't go that way.");
 					}
 					break;
-
-
 				// Look commands
 				case "look":
 					Rooms.print(room, row, col);
@@ -116,7 +111,7 @@ public class Main {
 							} else {
 								switch (item) {
 									case "reign energy drink":
-										System.out.println("EUGH. DAN MUST HAVE BEEN HERE.");
+										System.out.println("EUGH. DAN MUST HAVE BEEN HERE. Mister Monaghan would not approve of this energy drink.");
 										break;
 									case "note":
 										System.out.println("The note reads: You will never find me. I am not in this house.");
@@ -171,5 +166,11 @@ public class Main {
 			}
 			System.exit(0);
 		}
+
+	private static void titlePrint() {
+		System.out.println("+-----------------------------------+");
+		System.out.println("| Horror Text Adventure: Greenhouse |");
+		System.out.println("+-----------------------------------+");
 	}
+}
 
