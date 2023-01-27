@@ -38,6 +38,11 @@ class Inventory {
 
 	private static boolean isInInventory(String item, ArrayList<String> inventory) {
 		boolean inInventory = false;
+		inInventory = isInInventory(item, inventory, inInventory);
+		return inInventory;
+	}
+
+	private static boolean isInInventory(String item, ArrayList<String> inventory, boolean inInventory) {
 		for (String itemInInv : inventory) {
 			if (itemInInv.equalsIgnoreCase(item)) { // added ignore case
 				inInventory = true;

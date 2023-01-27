@@ -18,6 +18,7 @@ class Rooms {
 		NPC John = new NPC("John", true, true);
 
 		NPC Dan = new NPC("Dan", true, true);
+
 		//w = row--
 		//s = row++
 		//a = col--
@@ -35,18 +36,8 @@ class Rooms {
 		room[0][0].setItems("newspaper");
 		room[0][0].setItems("small box");
 		room[0][0].setNPC(Dan);
-		if (Dan.isAlive()){
-			exits[0] = "";
-			exits[1] = "";
-			exits[2] = "";
-			exits[3] = "";
-			room[0][0].setExits(exits);
-		}
-		exits[0] = "s";
-		exits[1] = "";
-		exits[2] = "";
-		exits[3] = "";
 		room[0][0].setExits(exits);
+
 
 		// room 2, x from room 1
 		exits[0] = "w";
@@ -189,7 +180,8 @@ class Rooms {
 		room[7][2].setItems("fancy socks");
 		room[7][2].setNPC(John);
 //		while(John.isAlive()){
-//			room[7][2].setExits(null);
+//			room[7][2].setExits(null);w
+
 //		}
 		room[7][2].setExits(exits);
 
@@ -272,7 +264,6 @@ class Rooms {
 		room[3][5].setItems("severed head");
 
 
-
 	}
 
 	private static void createRoom(Room[][] room, int HEIGHT, int WIDTH) {
@@ -295,15 +286,22 @@ class Rooms {
 			System.out.println(room[x][y].getName());
 			System.out.println(room[x][y].getDescription() + " - at Position: " + x + "," + y);
 			System.out.println("You see: " + room[x][y].getItems());
+			for (NPC npc : room[x][y].getNPClist()) {
+				System.out.println(npc.getName());
+			}
 
 		} else {
 			System.out.println(room[x][y].getName());
 			System.out.println(room[x][y].getDescription() + " - at Position: " + x + "," + y);
 			System.out.println("You see nothingness: " + " - in Position: " + x + "," + y);
 			System.out.println(Arrays.toString(exits));
+			for (NPC npc : room[x][y].getNPClist()) {
+				System.out.println(npc.getName());
+			}
 		}
 		checkForExits();
 	}
+
 
 	private static void checkForExits() {
 		if (Arrays.toString(exits).contains("a")) {
@@ -319,6 +317,7 @@ class Rooms {
 			System.out.print("The door at the bottom of the room is open");
 		}
 	}
+
 
 	// Remove item from room when added to inventory
 	public static void removeItem(Room[][] room, int x, int y, String item) {
@@ -336,12 +335,14 @@ class Room {
 	private boolean locked = false;
 	public ArrayList<String> items = new ArrayList<>();
 	public ArrayList<String> exits = new ArrayList<>();
-	public ArrayList<NPC> NPClist = new ArrayList<>();
+	public static ArrayList<NPC> NPClist = new ArrayList<>();
 
-	public Room(int number, String name, String description,
-	            ArrayList<String> items, ArrayList<NPC> npcList) {
+	public Room(int number, String name, String description, ArrayList<String> items, ArrayList<NPC> npcList) {
 	}
 
+	public static boolean checkNPCLocation(String NPCName) {
+		return NPCName.equalsIgnoreCase("Dan");
+	}
 
 
 	public void setNumber(int number) {
@@ -386,10 +387,10 @@ class Room {
 	}
 
 	public void setNPClist(ArrayList<NPC> NPClist) {
-		this.NPClist = NPClist;
+		Room.NPClist = NPClist;
 	}
 
-	public boolean hasNPCs(){
+	public boolean hasNPCs() {
 		return !getNPClist().isEmpty();
 	}
 
@@ -397,8 +398,12 @@ class Room {
 		this.items.add(item);
 	}
 
-	public void setNPC(NPC npc){
-		this.NPClist.add(npc);
+	public void setNPC(NPC npc) {
+		NPClist.add(npc);
+	}
+
+	public void removeNPC(NPC npc) {
+		NPClist.remove(npc);
 	}
 
 	public void setExits(String[] exit) {
@@ -416,27 +421,63 @@ class Room {
 	public ArrayList<String> getItems() {
 		return this.items;
 	}
-}
 
-class item{
-
-	private String name;
-	private String description;
-
-	public void setName(String name) {
-		this.name = name;
+	public static boolean checkIfNPCIsReal(String npcName) {
+		for (NPC npc : NPClist) {
+			if (npcName.equalsIgnoreCase(npc.getName())) {
+				npc = null;
+				return true;
+			}
+		}
+		return false;
 	}
 
-	public String getName() {
-		return this.name;
+	public static NPC findWhich(String npcName) {
+		for(NPC npc: NPClist){
+			if(npcName.equalsIgnoreCase(npc.getName())){
+				return npc;
+			}
+		}
+		return new NPC("Error", true, true);
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+
+	public static int attack(String npcName) {
+		NPC use;
+		if (checkIfNPCIsReal(npcName)) {
+			use = findWhich(npcName);
+			use.setAlive(false);
+			NPClist.remove(use);
+			System.out.println("You killed "+use.getName());
+			use = null;
+			return 5;
+
+
+		}
+		return 0;
 	}
 
-	public String getDescription() {
-		return this.description;
+	class item {
+
+		private String name;
+		private String description;
+
+		public void setName(String name) {
+			this.name = name;
+		}
+
+		public String getName() {
+			return this.name;
+		}
+
+		public void setDescription(String description) {
+			this.description = description;
+		}
+
+		public String getDescription() {
+			return this.description;
+		}
+
 	}
 }
 

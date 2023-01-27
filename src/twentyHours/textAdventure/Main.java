@@ -48,52 +48,36 @@ public class Main {
 					if (room[row][col].exits.contains("w")) {
 						row--;
 						Rooms.print(room, row, col);
-					} else {
-						if (room[row][col].hasNPCs()) {
-							System.out.println("You have to defeat the NPC first.");
-						} else {
-							System.out.println("You can't go that way.");
-
-						}
+					}else {
+						System.out.println("You can't go that way.");
+						break;
 					}
 					break;
 				case "s":
 					if (room[row][col].exits.contains("s")) {
 						row++;
 						Rooms.print(room, row, col);
-					} else {
-						if (room[row][col].hasNPCs()) {
-							System.out.println("You have to defeat the NPC first.");
-						} else {
-							System.out.println("You can't go that way.");
-
-						}
+					}else {
+						System.out.println("You can't go that way.");
+						break;
 					}
 					break;
 				case "d":
 					if (room[row][col].exits.contains("d")) {
 						col++;
 						Rooms.print(room, row, col);
-					} else {
-						if (room[row][col].hasNPCs()) {
-							System.out.println("You have to defeat the NPC first.");
-						} else {
-							System.out.println("You can't go that way.");
-
-						}
+					}else {
+						System.out.println("You can't go that way.");
+						break;
 					}
 					break;
 				case "a":
 					if (room[row][col].exits.contains("a")) {
 						col--;
 						Rooms.print(room, row, col);
-					} else {
-						if (room[row][col].hasNPCs()) {
-							System.out.println("You have to defeat the NPC first.");
-						} else {
-							System.out.println("You can't go that way.");
-
-						}
+					}else {
+						System.out.println("You can't go that way.");
+						break;
 					}
 					break;
 				// Look commands
@@ -102,33 +86,14 @@ public class Main {
 					break;
 				default:
 					// Get commands
-					if (input.substring(0, 4).equalsIgnoreCase("get ") || input.substring(0, 5).equalsIgnoreCase("take ")) {
-						boolean somethingAfterCmd = input.substring(input.indexOf(" ")).length() > 1;
-						if (somethingAfterCmd) {
-							String item = input.substring(input.indexOf(' ') + 1);
-							if (item.equalsIgnoreCase("car")) {
-								System.out.println("You can not store a car in your inventory.");
-							} else {
-								switch (item) {
-									case "reign energy drink":
-										System.out.println("EUGH. DAN MUST HAVE BEEN HERE. Mister Monaghan would not approve of this energy drink.");
-										break;
-									case "note":
-										System.out.println("The note reads: You will never find me. I am not in this house.");
-										break;
-
-								}
-								// Sounds.playItemPickup();
-
-								score = Inventory.checkItem(row, col, item, inventory, room, score);
-
-							}
+					if(input.length()>5) {
+						if (input.substring(0, 4).equalsIgnoreCase("get ") || input.substring(0, 5).equalsIgnoreCase("take ")) {
+							boolean somethingAfterCmd = input.substring(input.indexOf(" ")).length() > 1;
+							score = findScore(room, row, col, score, inventory, input, somethingAfterCmd);
 						}
 					}
 
-
 					// Inventory commands
-
 					else if (input.equals("i") || input.equals("inv")
 							|| input.equals("inventory")) {
 						Inventory.print(inventory);
@@ -145,8 +110,11 @@ public class Main {
 						Main.main(args);
 					} else if (input.equals("help")) {
 						Input.helpCMDS();
-					} else if (input.equalsIgnoreCase("attack") && room[row][col].hasNPCs()) {
-						//NPC.attack(room[row][col].NPClist.get(0));
+					} else if (input.length() > 6 && input.startsWith("attack  ")) {
+						boolean somethingAfterCmd = input.substring(input.indexOf(" ")).length() > 1;
+						String person = input.substring(input.indexOf(' ')+1);
+							score += Room.attack(person);
+
 					}
 
 					// Quit commands
@@ -160,12 +128,41 @@ public class Main {
 					}
 			}
 
-					if (score == 240) {
-						System.out.println("You win!");
-					}
-			}
-			System.exit(0);
+			checkScore(score);
 		}
+		System.exit(0);
+	}
+
+
+	private static int findScore(Room[][] room, int row, int col, int score, ArrayList<String> inventory, String input, boolean somethingAfterCmd) {
+		if (somethingAfterCmd) {
+			String item = input.substring(input.indexOf(' ') + 1);
+			if (item.equalsIgnoreCase("car")) {
+				System.out.println("You can not store a car in your inventory.");
+			} else {
+				switch (item) {
+					case "reign energy drink":
+						System.out.println("EUGH. DAN MUST HAVE BEEN HERE. Mister Monaghan would not approve of this energy drink.");
+						break;
+					case "note":
+						System.out.println("The note reads: You will never find me. I am not in this house.");
+						break;
+
+				}
+				// Sounds.playItemPickup();
+
+				score = Inventory.checkItem(row, col, item, inventory, room, score);
+
+			}
+		}
+		return score;
+	}
+
+	private static void checkScore(int score) {
+		if (score == 240) {
+			System.out.println("You win!");
+		}
+	}
 
 	private static void titlePrint() {
 		System.out.println("+-----------------------------------+");

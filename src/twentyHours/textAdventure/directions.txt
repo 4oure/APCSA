@@ -14,6 +14,7 @@ Make the code more efficient or streamlined 20
   // fixed uppercase/lowercase error, used .equalsIgnoreCase();
   // fixed unnecessary if-else to a switch
   // moved all help commands to a class so it didnt print everything twice instead just call method
+  // a million new methods like createRoom, findScore
 
 
 

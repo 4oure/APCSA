@@ -1,7 +1,7 @@
 package twentyHours.textAdventure;
 
 public class NPC {
-	private String name = "";
+	private String name;
 	private boolean isMean;
 	private boolean isAlive;
 
@@ -35,9 +35,7 @@ public class NPC {
 		this.isAlive = isAlive;
 	}
 
-	public static void attack(NPC npc){
-		npc.isAlive = false;
-	}
+
 
 
 }
