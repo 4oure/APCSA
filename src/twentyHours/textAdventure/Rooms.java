@@ -13,11 +13,8 @@ class Rooms {
 	public static void build(Room[][] room, final int HEIGHT, final int WIDTH) {
 
 		// Initialize rooms
-		createRoom(room, HEIGHT, WIDTH);
-
-		NPC John = new NPC("John", true, true);
-
 		NPC Dan = new NPC("Dan", true, true);
+		createRoom(room, HEIGHT, WIDTH);
 
 		//w = row--
 		//s = row++
@@ -35,7 +32,6 @@ class Rooms {
 		room[0][0].setDescription("You are in the entryway to the old house.");
 		room[0][0].setItems("newspaper");
 		room[0][0].setItems("small box");
-		room[0][0].setNPC(Dan);
 		room[0][0].setExits(exits);
 
 
@@ -178,7 +174,6 @@ class Rooms {
 		room[7][2].setName("Bedroom walk-in closet");
 		room[7][2].setDescription("The closet holds what a man holds closest to his heart.");
 		room[7][2].setItems("fancy socks");
-		room[7][2].setNPC(John);
 		room[7][2].setExits(exits);
 
 
@@ -238,7 +233,7 @@ class Rooms {
 		room[4][3].setExits(exits);
 
 		exits[0] = "a";
-		exits[1] = "";
+		exits[1] = "d";
 		exits[2] = "";
 		exits[3] = "";
 		room[3][4].setNumber(18);
@@ -255,12 +250,14 @@ class Rooms {
 		exits[3] = "";
 		room[3][5].setNumber(19);
 		room[3][5].setName("Neighbor's greenhouse storage closet");
-		room[3][5].setDescription("This is the creepy greenhouse storage closet.");
+		room[3][5].setDescription("This is the creepy greenhouse storage closet. Dan, the murderer, jumps out at you and prepares to strike! You must attack!");
 		room[3][5].setItems("a lovely petunia");
 		room[3][5].setItems("severed head");
+		room[3][5].setNPC(Dan);
 
 
 	}
+
 
 	private static void createRoom(Room[][] room, int HEIGHT, int WIDTH) {
 		for (int i = 0; i < HEIGHT; i++) {
@@ -270,6 +267,7 @@ class Rooms {
 		}
 	}
 
+
 	public static void print(Room[][] room, int x, int y) {
 
 		System.out.println();
@@ -277,13 +275,14 @@ class Rooms {
 		roomFunction(room, x, y);
 	}
 
+
 	private static void roomFunction(Room[][] room, int x, int y) {
 		if (!room[x][y].getItems().isEmpty()) {
 			System.out.println(room[x][y].getName());
 			System.out.println(room[x][y].getDescription() + " - at Position: " + x + "," + y);
 			System.out.println("You see: " + room[x][y].getItems());
 			for (NPC npc : room[x][y].getNPClist()) {
-				System.out.println(npc.getName());
+				System.out.println("You see " +npc.getName());
 			}
 
 		} else {
@@ -315,6 +314,8 @@ class Rooms {
 	}
 
 
+
+
 	// Remove item from room when added to inventory
 	public static void removeItem(Room[][] room, int x, int y, String item) {
 
@@ -336,10 +337,6 @@ class Room {
 //	public Room(int number, String name, String description, ArrayList<String> items, ArrayList<NPC> npcList) {
 //
 //	}
-
-	public static boolean checkNPCLocation(String NPCName) {
-		return NPCName.equalsIgnoreCase("Dan");
-	}
 
 
 	public void setNumber(int number) {
@@ -429,7 +426,7 @@ class Room {
 		return false;
 	}
 
-	public  NPC findWhich(String npcName) {
+	public NPC findWhich(String npcName) {
 		for (NPC npc : NPClist) {
 			if (npcName.equalsIgnoreCase(npc.getName())) {
 				return npc;

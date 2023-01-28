@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="fixed annotation">
+    <list default="true" id="a829e84a-55c2-4cc5-9c37-1dd788c7a155" name="Changes" comment="fixed class constructor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/twentyHours/textAdventure/Rooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twentyHours/textAdventure/Rooms.java" afterDir="false" />
@@ -174,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662996494777</updated>
-    </task>
-    <task id="LOCAL-00054" summary="fixedPrivate">
-      <created>1667346119346</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1667346119346</updated>
     </task>
     <task id="LOCAL-00055" summary="addedListThingForInsurance">
       <created>1667500158516</created>
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674943502452</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="fixed class constructor">
+      <created>1674945348039</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1674945348039</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -572,7 +572,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="MonDec12" />
     <MESSAGE value="TuesDay13" />
     <MESSAGE value="WedJan4" />
     <MESSAGE value="FriJan6" />
@@ -597,7 +596,8 @@
     <MESSAGE value="lots of refactor" />
     <MESSAGE value="doesn't work but no errors" />
     <MESSAGE value="fixed annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed annotation" />
+    <MESSAGE value="fixed class constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed class constructor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -622,11 +622,6 @@
           <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="15" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/twentyHours/textAdventure/Rooms.java</url>
-          <line>280</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

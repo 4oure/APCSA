@@ -15,6 +15,7 @@ public class Main {
 		final int HEIGHT = 15;
 		final int WIDTH = 15;
 
+
 		Room[][] room = new Room[HEIGHT][WIDTH];
 		Rooms.build(room, HEIGHT, WIDTH);
 		int row = 0;
@@ -113,6 +114,10 @@ public class Main {
 					} else if (input.length() > 6 && (input.startsWith("attack") || input.startsWith("kill"))) {
 						String person = input.substring(input.indexOf(' ') + 1);
 						score += room[row][col].attack(person, room[row][col]);
+						System.out.println("Dan shrieks as he is slain.");
+						System.out.println("You killed Dan! You win!");
+						System.out.println("Your score is " +score);
+						System.exit(0);
 
 
 					}
@@ -123,11 +128,9 @@ public class Main {
 
 						// Catch-all for invalid input
 					} else {
-						System.out.println("Invalid command.");
+						System.out.println("Invalid command. Type h or help to receive help.");
 					}
 			}
-
-			checkScore(score);
 		}
 		System.exit(0);
 	}
@@ -160,12 +163,6 @@ public class Main {
 			}
 		}
 		return score;
-	}
-
-	private static void checkScore(int score) {
-		if (score == 240) {
-			System.out.println("You win!");
-		}
 	}
 
 	private static void titlePrint() {
