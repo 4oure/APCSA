@@ -88,7 +88,7 @@ public class Main {
 					break;
 				default:
 					// Get commands
-					if (input.substring(0, 4).equalsIgnoreCase("get ") || input.substring(0, 5).equalsIgnoreCase("take ")) {
+					if(input.length() > 5 && (input.substring(0, 4).equalsIgnoreCase("get ") || input.substring(0, 5).equalsIgnoreCase("take "))) {
 						boolean somethingAfterCmd = isSomethingAfterCmd(input);
 						score = findScore(room, row, col, score, inventory, input, somethingAfterCmd);
 					}
@@ -112,7 +112,7 @@ public class Main {
 						Input.helpCMDS();
 					} else if (input.length() > 6 && (input.startsWith("attack") || input.startsWith("kill"))) {
 						String person = input.substring(input.indexOf(' ') + 1);
-						score += Room.attack(person);
+						score += room[row][col].attack(person, room[row][col]);
 
 
 					}

@@ -265,7 +265,7 @@ class Rooms {
 	private static void createRoom(Room[][] room, int HEIGHT, int WIDTH) {
 		for (int i = 0; i < HEIGHT; i++) {
 			for (int j = 0; j < WIDTH; j++) {
-				room[i][j] = new Room(i, "", "", null, null);
+				room[i][j] = new Room();
 			}
 		}
 	}
@@ -331,10 +331,11 @@ class Room {
 	private boolean locked = false;
 	public ArrayList<String> items = new ArrayList<>();
 	public ArrayList<String> exits = new ArrayList<>();
-	public static ArrayList<NPC> NPClist = new ArrayList<>();
+	public ArrayList<NPC> NPClist = new ArrayList<>();
 
-	public Room(int number, String name, String description, ArrayList<String> items, ArrayList<NPC> npcList) {
-	}
+//	public Room(int number, String name, String description, ArrayList<String> items, ArrayList<NPC> npcList) {
+//
+//	}
 
 	public static boolean checkNPCLocation(String NPCName) {
 		return NPCName.equalsIgnoreCase("Dan");
@@ -379,11 +380,11 @@ class Room {
 
 
 	public ArrayList<NPC> getNPClist() {
-		return NPClist;
+		return this.NPClist;
 	}
 
 	public void setNPClist(ArrayList<NPC> NPClist) {
-		Room.NPClist = NPClist;
+		this.NPClist = NPClist;
 	}
 
 	public boolean hasNPCs() {
@@ -418,7 +419,7 @@ class Room {
 		return this.items;
 	}
 
-	public static boolean checkIfNPCIsReal(String npcName) {
+	public boolean checkIfNPCIsReal(String npcName) {
 		for (NPC npc : NPClist) {
 			if (npcName.equalsIgnoreCase(npc.getName())) {
 				npc = null;
@@ -428,7 +429,7 @@ class Room {
 		return false;
 	}
 
-	public static NPC findWhich(String npcName) {
+	public  NPC findWhich(String npcName) {
 		for (NPC npc : NPClist) {
 			if (npcName.equalsIgnoreCase(npc.getName())) {
 				return npc;
@@ -438,12 +439,12 @@ class Room {
 	}
 
 
-	public static int attack(String npcName) {
+	public int attack(String npcName, Room room) {
 		NPC use;
 		if (checkIfNPCIsReal(npcName)) {
 			use = findWhich(npcName);
 			use.setAlive(false);
-			NPClist.remove(use);
+			room.NPClist.remove(use);
 			System.out.println("You killed " + use.getName());
 			use = null;
 			return 5;
