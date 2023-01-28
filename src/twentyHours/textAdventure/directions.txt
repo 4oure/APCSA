@@ -6,8 +6,9 @@ Programming Tasks	                                    Points
 Required
 Modify an existing class (new methods and attributes)	      10
   // FINALLY FIXED THE POINT THING. the drop method in Inventory returns an int now
+  // modified/created a bunch of new methods in Main, Room
 Add a new class (that actually enhances the game)	          20
- // working on NPC class
+ // finished NPC class
 Create at least 15 rooms with items	                          20
   // done
 Make the code more efficient or streamlined 20
@@ -15,9 +16,6 @@ Make the code more efficient or streamlined 20
   // fixed unnecessary if-else to a switch
   // moved all help commands to a class so it didnt print everything twice instead just call method
   // a million new methods like createRoom, findScore
-
-
-
 Create a way to “win” the game                                20
 // i think i did it but i havent tested it yet
 Make the game more interactive better feedback, sounds, etc.  10
@@ -30,7 +28,9 @@ Make the game more interactive better feedback, sounds, etc.  10
 Total	                                                      100
 Optional
 Add a theme - (horror – historic – puzzle -- adventure)	       5
+// there's some blood and stuff so maybe it is a horror game idk
 Add a NPC (non-player character)	10
+//did this, it is even the new class
 Save/load game function	10
 Total	25
 

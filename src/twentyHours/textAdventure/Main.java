@@ -7,6 +7,8 @@ import java.util.Scanner;
 
 public class Main {
 
+	public static final int CHARACTERS_FOR_DROP = 5;
+
 	public static void main(String[] args) {
 
 		// Build rooms
@@ -48,7 +50,7 @@ public class Main {
 					if (room[row][col].exits.contains("w")) {
 						row--;
 						Rooms.print(room, row, col);
-					}else {
+					} else {
 						System.out.println("You can't go that way.");
 						break;
 					}
@@ -57,7 +59,7 @@ public class Main {
 					if (room[row][col].exits.contains("s")) {
 						row++;
 						Rooms.print(room, row, col);
-					}else {
+					} else {
 						System.out.println("You can't go that way.");
 						break;
 					}
@@ -66,7 +68,7 @@ public class Main {
 					if (room[row][col].exits.contains("d")) {
 						col++;
 						Rooms.print(room, row, col);
-					}else {
+					} else {
 						System.out.println("You can't go that way.");
 						break;
 					}
@@ -75,7 +77,7 @@ public class Main {
 					if (room[row][col].exits.contains("a")) {
 						col--;
 						Rooms.print(room, row, col);
-					}else {
+					} else {
 						System.out.println("You can't go that way.");
 						break;
 					}
@@ -86,19 +88,17 @@ public class Main {
 					break;
 				default:
 					// Get commands
-					if(input.length()>5) {
-						if (input.substring(0, 4).equalsIgnoreCase("get ") || input.substring(0, 5).equalsIgnoreCase("take ")) {
-							boolean somethingAfterCmd = input.substring(input.indexOf(" ")).length() > 1;
-							score = findScore(room, row, col, score, inventory, input, somethingAfterCmd);
-						}
+					if (input.substring(0, 4).equalsIgnoreCase("get ") || input.substring(0, 5).equalsIgnoreCase("take ")) {
+						boolean somethingAfterCmd = isSomethingAfterCmd(input);
+						score = findScore(room, row, col, score, inventory, input, somethingAfterCmd);
 					}
 
 					// Inventory commands
 					else if (input.equals("i") || input.equals("inv")
 							|| input.equals("inventory")) {
 						Inventory.print(inventory);
-					} else if (input.length() > 5 && input.startsWith("drop ")) {
-						boolean somethingAfterCmd = input.substring(input.indexOf(" ")).length() > 1;
+					} else if (input.length() > CHARACTERS_FOR_DROP && input.startsWith("drop ")) {
+						boolean somethingAfterCmd = isSomethingAfterCmd(input);
 						if (somethingAfterCmd) {
 							String item = input.substring(input.indexOf(' ') + 1);
 							score = Inventory.dropItem(inventory, item, room, row, col, score);
@@ -110,13 +110,12 @@ public class Main {
 						Main.main(args);
 					} else if (input.equals("help")) {
 						Input.helpCMDS();
-					} else if (input.length() > 6 && input.startsWith("attack  ")) {
-						boolean somethingAfterCmd = input.substring(input.indexOf(" ")).length() > 1;
-						String person = input.substring(input.indexOf(' ')+1);
-							score += Room.attack(person);
+					} else if (input.length() > 6 && (input.startsWith("attack") || input.startsWith("kill"))) {
+						String person = input.substring(input.indexOf(' ') + 1);
+						score += Room.attack(person);
+
 
 					}
-
 					// Quit commands
 					else if (input.equals("quit")) {
 						System.out.println("Goodbye!");
@@ -131,6 +130,11 @@ public class Main {
 			checkScore(score);
 		}
 		System.exit(0);
+	}
+
+	private static boolean isSomethingAfterCmd(String input) {
+		boolean somethingAfterCmd = input.substring(input.indexOf(" ")).length() > 1;
+		return somethingAfterCmd;
 	}
 
 
