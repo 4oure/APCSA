@@ -179,10 +179,6 @@ class Rooms {
 		room[7][2].setDescription("The closet holds what a man holds closest to his heart.");
 		room[7][2].setItems("fancy socks");
 		room[7][2].setNPC(John);
-//		while(John.isAlive()){
-//			room[7][2].setExits(null);w
-
-//		}
 		room[7][2].setExits(exits);
 
 
@@ -433,8 +429,8 @@ class Room {
 	}
 
 	public static NPC findWhich(String npcName) {
-		for(NPC npc: NPClist){
-			if(npcName.equalsIgnoreCase(npc.getName())){
+		for (NPC npc : NPClist) {
+			if (npcName.equalsIgnoreCase(npc.getName())) {
 				return npc;
 			}
 		}
@@ -448,7 +444,7 @@ class Room {
 			use = findWhich(npcName);
 			use.setAlive(false);
 			NPClist.remove(use);
-			System.out.println("You killed "+use.getName());
+			System.out.println("You killed " + use.getName());
 			use = null;
 			return 5;
 

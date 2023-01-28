@@ -1,6 +1,6 @@
 package twentyHours;
 
-import org.jetbrains.annotations.NotNull;
+
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -88,7 +88,7 @@ public class Review {
 	/**
 	 * Returns the ending punctuation of a string, or the empty string if there is none
 	 */
-	public static String getPunctuation(@NotNull String word) {
+	public static String getPunctuation(String word) {
 		String punc = "";
 		for (int i = word.length() - 1; i >= 0; i--) {
 			if (!Character.isLetterOrDigit(word.charAt(i))) {
@@ -103,7 +103,7 @@ public class Review {
 	/**
 	 * Returns the word after removing any beginning or ending punctuation
 	 */
-	public static String removePunctuation(@NotNull String word) {
+	public static String removePunctuation(String word) {
 		while (word.length() > 0 && !Character.isAlphabetic(word.charAt(0))) {
 			word = word.substring(1);
 		}
